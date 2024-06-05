@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar with Hover Effect</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-navbar {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            z-index: 10;
+        }
+
+        .navbar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+        }
+
+        .icon img {
+            height: 40px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #999;
+            text-decoration: none;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            color: #333;
+            background-color: #e0e0e0;
+        }
+
+        .floating-navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0 2px 4px rgba(47, 62, 136, 0.1);
+            transition: opacity 1s, top 0.4s;
+            z-index: 9;
+            opacity: 0;
+        }
+
+        body.scrolled .floating-navbar {
+            top: 0;
+            opacity: 1;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-container {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 10px 5%;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+            }
+
+            .nav-links a {
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-navbar">
+        <div class="navbar-container">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="assets/General/shiyuanIcon.png" alt="Icon">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a class="nav-tab" href="about.html">About</a>
+                <a class="nav-tab" href="assets/General/ShiyuanTian_resume_2024.pdf" target="_blank">CV</a>
+            </nav>
+        </div>
+    </header>
+
+    <header class="floating-navbar">
+        <div class="navbar-container">
+            <div class="icon">
+                <a href="index.html">
+                    <img src="assets/General/shiyuanIcon.png" alt="Icon">
+                </a>
+            </div>
+            <nav class="nav-links">
+                <a class="nav-tab" href="about.html">About</a>
+                <a class="nav-tab" href="assets/General/ShiyuanTian_resume_2024.pdf" target="_blank">CV</a>
+            </nav>
+        </div>
+    </header>
+
+    <div style="height: 2000px; padding-top: 100px;">
+        Scroll to test floating navbar...
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const floatingNavbar = document.querySelector('.floating-navbar');
+            let timer;
+            let lastScrollTop = 0;
+
+            window.addEventListener('scroll', () => {
+                clearTimeout(timer);
+                const currentScrollTop = window.scrollY;
+
+                if (currentScrollTop > lastScrollTop) {
+                    if (currentScrollTop > 100) {
+                        floatingNavbar.style.top = '0';
+                        floatingNavbar.style.opacity = '1';
+                    }
+                } else {
+                    floatingNavbar.style.opacity = '0';
+                }
+
+                lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+
+                timer = setTimeout(() => {
+                    if (window.scrollY > 100) {
+                        floatingNavbar.style.top = '0';
+                        floatingNavbar.style.opacity = '1';
+                    } else {
+                        floatingNavbar.style.top = '0';
+                        floatingNavbar.style.opacity = '0';
+                    }
+                }, 500);
+            });
+        });
+    </script>
+</body>
+
+</html>
