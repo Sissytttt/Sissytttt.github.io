@@ -107,6 +107,95 @@ body.scrolled .floating-navbar {
 /* ------------------- navbar end -------------------*/
 
 
+
+
+/* ------------------- footer starts -------------------*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0eaf1;
+    padding: 50px 10%;
+    padding-bottom: 200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-left {
+    flex: 1;
+    font-size: 18px;
+}
+
+.footer-right {
+    flex: 2;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+    flex: 0 0 34%;
+    box-sizing: border-box;
+    margin: 8%;
+    text-align: center;
+    position: relative;
+}
+
+.gallery-item:hover .project-title {
+    color: rgba(255, 255, 255, 1);
+    transition: color 0.5s;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    border-radius: 3px;
+
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gallery-arrow {
+    position: absolute;
+    top: 44%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: rgb(33, 51, 83);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+}
+
+/* ------------------- footer ends -------------------*/
+
+
+
 .title {
     font-family: "DM Serif Display", serif;
     font-weight: 400;

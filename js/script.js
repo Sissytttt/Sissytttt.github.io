@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // navbar scrolling animation
     const floatingNavbar = document.querySelector('.floating-navbar');
     let timer;
     let lastScrollTop = 0;
@@ -30,5 +31,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 200);
     });
-});
 
+
+    // Footer gallery animation
+    let currentIndex = 0;
+    const itemsPerPage = 2;
+    const galleryContainer = document.querySelector('.gallery-container');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const totalItems = galleryItems.length;
+    const totalPages = totalItems - 1;
+
+    function updateGallery() {
+        const offset = (currentIndex * 100) / 2;
+        galleryContainer.style.transform = `translateX(-${offset}%)`;
+    }
+
+    window.nextSlide = function () {
+        currentIndex = (currentIndex + 1) % totalPages;
+        updateGallery();
+    };
+
+    window.prevSlide = function () {
+        currentIndex = (currentIndex - 1 + totalPages) % totalPages;
+        updateGallery();
+    };
+
+    updateGallery();
+});

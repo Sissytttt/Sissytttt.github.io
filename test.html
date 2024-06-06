@@ -4,157 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar with Hover Effect</title>
+    <title>Portfolio</title>
     <style>
-        body,
-        html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
         }
 
-        .main-navbar {
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(255, 255, 255, 0.9);
-            z-index: 10;
+        .main-content {
+            height: 200vh;
         }
 
-        .navbar-container {
+        .footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 10%;
-        }
-
-        .icon img {
-            height: 40px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-
-        .nav-links a {
-            color: #999;
-            text-decoration: none;
-            transition: color 0.3s, background-color 0.3s;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-
-        .nav-links a:hover {
-            color: #333;
-            background-color: #e0e0e0;
-        }
-
-        .floating-navbar {
-            position: fixed;
+            background-color: #e0eaf1;
+            padding: 50px 10%;
+            padding-bottom: 200px;
             width: 100%;
-            top: 0;
-            left: 0;
-            background-color: rgba(255, 255, 255, 1);
-            box-shadow: 0 2px 4px rgba(47, 62, 136, 0.1);
-            transition: opacity 1s, top 0.4s;
-            z-index: 9;
-            opacity: 0;
+            box-sizing: border-box;
         }
 
-        body.scrolled .floating-navbar {
-            top: 0;
-            opacity: 1;
+        .footer-left {
+            flex: 1;
+            font-size: 18px;
         }
 
-        @media (max-width: 767px) {
-            .navbar-container {
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 10px 5%;
-            }
+        .footer-right {
+            flex: 2;
+            position: relative;
+        }
 
-            .nav-links {
-                flex-direction: column;
-                width: 100%;
-                gap: 10px;
-            }
+        /* delete */
+        .all-content {
+            width: 60vw;
+        }
 
-            .nav-links a {
-                width: 100%;
-                text-align: left;
-            }
+        .gallery {
+            display: flex;
+            align-items: center;
+            margin-right: 5%;
+            overflow: hidden;
+        }
+
+        .gallery-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .gallery-item {
+            flex: 0 0 34%;
+            box-sizing: border-box;
+            margin: 8%;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .gallery-arrow {
+            position: absolute;
+            top: 44%;
+            right: 10px;
+            transform: translateY(-50%);
+            background-color: transparent;
+            color: rgb(33, 51, 83);
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
         }
     </style>
 </head>
 
 <body>
-    <header class="main-navbar">
-        <div class="navbar-container">
-            <div class="icon">
-                <a href="index.html">
-                    <img src="assets/General/shiyuanIcon.png" alt="Icon">
-                </a>
-            </div>
-            <nav class="nav-links">
-                <a class="nav-tab" href="about.html">About</a>
-                <a class="nav-tab" href="assets/General/ShiyuanTian_resume_2024.pdf" target="_blank">CV</a>
-            </nav>
-        </div>
-    </header>
-
-    <header class="floating-navbar">
-        <div class="navbar-container">
-            <div class="icon">
-                <a href="index.html">
-                    <img src="assets/General/shiyuanIcon.png" alt="Icon">
-                </a>
-            </div>
-            <nav class="nav-links">
-                <a class="nav-tab" href="about.html">About</a>
-                <a class="nav-tab" href="assets/General/ShiyuanTian_resume_2024.pdf" target="_blank">CV</a>
-            </nav>
-        </div>
-    </header>
-
-    <div style="height: 2000px; padding-top: 100px;">
-        Scroll to test floating navbar...
+    <div class="main-content">
+        <!-- Your main content here -->
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const floatingNavbar = document.querySelector('.floating-navbar');
-            let timer;
-            let lastScrollTop = 0;
+    <footer class="footer">
+        <div class="footer-left">
+            <p>View other projects</p>
+        </div>
+        <div class="footer-right">
+            <div class="gallery">
+                <div class="all-content">
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 1">
+                            <p>Project 1</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 2">
+                            <p>Project 2</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 3">
+                            <p>Project 3</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 4">
+                            <p>Project 4</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 5">
+                            <p>Project 5</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 6">
+                            <p>Project 6</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="gallery-arrow right" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </footer>
 
-            window.addEventListener('scroll', () => {
-                clearTimeout(timer);
-                const currentScrollTop = window.scrollY;
+    <!-- <script>
+        let currentIndex = 0;
+        const itemsPerPage = 2;
+        const galleryContainer = document.querySelector('.gallery-container');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const totalItems = galleryItems.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-                if (currentScrollTop > lastScrollTop) {
-                    if (currentScrollTop > 100) {
-                        floatingNavbar.style.top = '0';
-                        floatingNavbar.style.opacity = '1';
-                    }
-                } else {
-                    floatingNavbar.style.opacity = '0';
-                }
+        function updateGallery() {
+            const offset = currentIndex * -100;
+            galleryContainer.style.transform = `translateX(${offset}%)`;
+        }
 
-                lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop;
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalPages;
+            updateGallery();
+        }
 
-                timer = setTimeout(() => {
-                    if (window.scrollY > 100) {
-                        floatingNavbar.style.top = '0';
-                        floatingNavbar.style.opacity = '1';
-                    } else {
-                        floatingNavbar.style.top = '0';
-                        floatingNavbar.style.opacity = '0';
-                    }
-                }, 500);
-            });
-        });
-    </script>
+        updateGallery();
+    </script> -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
