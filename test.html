@@ -4,148 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Footer Example</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        .wrapcontainer-flexStart {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .wrapcontainer-flexEnd {
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .wrap2content-1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon img {
+            height: 40px;
+            width: 45px;
+        }
+
+        /* Remove any extra margin or padding from the icon and text containers */
+        /* .icon-container,
+        .text-container {
             margin: 0;
-            padding: 0;
-        }
+            padding: 10px;
+        } */
 
-        .main-content {
-            height: 200vh;
-        }
-
-        .footer {
+        .wrapcontainer-spaceBetween {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            background-color: #e0eaf1;
-            padding: 50px 10%;
-            padding-bottom: 200px;
             width: 100%;
             box-sizing: border-box;
         }
 
-        .footer-left {
-            flex: 1;
-            font-size: 18px;
-        }
-
-        .footer-right {
-            flex: 2;
-            position: relative;
-        }
-
-        /* delete */
-        .all-content {
-            width: 60vw;
-        }
-
-        .gallery {
-            display: flex;
-            align-items: center;
-            margin-right: 5%;
-            overflow: hidden;
-        }
-
-        .gallery-container {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .gallery-item {
-            flex: 0 0 34%;
-            box-sizing: border-box;
-            margin: 8%;
-            text-align: center;
-        }
-
-        .gallery-item img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .gallery-arrow {
-            position: absolute;
-            top: 44%;
-            right: 10px;
-            transform: translateY(-50%);
-            background-color: transparent;
-            color: rgb(33, 51, 83);
-            border: none;
-            cursor: pointer;
-            font-size: 24px;
-            padding: 10px;
-        }
+        /* Remove default margin from paragraphs */
+        /* .text-container p {
+            margin: 0;
+        } */
     </style>
 </head>
 
 <body>
-    <div class="main-content">
-        <!-- Your main content here -->
-    </div>
-
-    <footer class="footer">
-        <div class="footer-left">
-            <p>View other projects</p>
-        </div>
-        <div class="footer-right">
-            <div class="gallery">
-                <div class="all-content">
-                    <div class="gallery-container">
-                        <div class="gallery-item">
-                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 1">
-                            <p>Project 1</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 2">
-                            <p>Project 2</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 3">
-                            <p>Project 3</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 4">
-                            <p>Project 4</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 5">
-                            <p>Project 5</p>
-                        </div>
-                        <div class="gallery-item">
-                            <img src="assets/Projects-featuredImage/feature.jpg" alt="Project 6">
-                            <p>Project 6</p>
-                        </div>
+    <footer>
+        <div class="wrapcontainer-spaceBetween">
+            <div class="wrapcontainer-flexStart">
+                <div class="wrap2content-1 icon-container">
+                    <div class="icon">
+                        <img src="assets/General/shiyuanIcon.png" alt="Icon" style="padding-right: 20px;">
                     </div>
                 </div>
+                <div class="wrap2content-1 text-container" style="text-align: left;">
+                    <p>shiyuantian.com<br>Copyright © 2024 Shiyuan Tian. All rights reserved.</p>
+                </div>
             </div>
-            <button class="gallery-arrow right" onclick="nextSlide()">&#10095;</button>
+
+            <div class="wrapcontainer-flexEnd">
+                <div class="wrap2content-1 icon-container">
+                    <div class="icon">
+                        <img src="assets/icons/mail2.png" alt="Icon" style="padding-right: 20px;">
+                    </div>
+                </div>
+                <div class="wrap2content-1 text-container" style="text-align: left;">
+                    <p>shiyuantian.com<br>Copyright © 2024 Shiyuan Tian. All rights reserved.</p>
+                </div>
+            </div>
         </div>
     </footer>
-
-    <!-- <script>
-        let currentIndex = 0;
-        const itemsPerPage = 2;
-        const galleryContainer = document.querySelector('.gallery-container');
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        const totalItems = galleryItems.length;
-        const totalPages = Math.ceil(totalItems / itemsPerPage);
-
-        function updateGallery() {
-            const offset = currentIndex * -100;
-            galleryContainer.style.transform = `translateX(${offset}%)`;
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % totalPages;
-            updateGallery();
-        }
-
-        updateGallery();
-    </script> -->
-    <script src="js/script.js"></script>
 </body>
 
 </html>

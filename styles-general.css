@@ -1,3 +1,4 @@
+/* color scheme: 6E8396 / 839DB5 */
 body {
     margin: 0;
     padding: 0;
@@ -19,10 +20,37 @@ body {
     justify-content: space-between;
 }
 
+.wrapcontainer-spaceBetween {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wrapcontainer-flexStart {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wrapcontainer-flexEnd {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.wrapcontent-flexSize {
+    display: flex;
+    align-items: center;
+}
+
 .wrap2content-1 {
     flex: 1 0 200px;
-    padding: 20px;
+    margin: 20px;
     box-sizing: border-box;
+    background-color: aqua;
 }
 
 .wrap2content-2 {
@@ -46,6 +74,8 @@ body {
     box-sizing: border-box;
 }
 
+
+
 /* ------------------- navbar start -------------------*/
 .main-navbar {
     width: 100%;
@@ -68,6 +98,7 @@ body {
 
 .icon img {
     height: 40px;
+    width: 45px;
 }
 
 .nav-links {
@@ -110,6 +141,16 @@ body.scrolled .floating-navbar {
 
 
 /* ------------------- footer starts -------------------*/
+.footer-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0eaf1;
+    padding: 50px 10% 0px 10%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -181,7 +222,7 @@ body.scrolled .floating-navbar {
 
 .gallery-arrow {
     position: absolute;
-    top: 44%;
+    top: 50%;
     right: 10px;
     transform: translateY(-50%);
     background-color: transparent;
