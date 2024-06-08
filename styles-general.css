@@ -1,4 +1,5 @@
 /* color scheme: 6E8396 / 839DB5 / e0eaf1*/
+
 body {
     margin: 0;
     padding: 0;
@@ -50,7 +51,6 @@ body {
     flex: 1 0 200px;
     margin: 20px;
     box-sizing: border-box;
-    background-color: aqua;
 }
 
 .wrap2content-2 {
@@ -142,11 +142,12 @@ body.scrolled .floating-navbar {
 
 /* ------------------- footer starts -------------------*/
 .footer-gallery {
+    margin-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #e0eaf1;
-    padding: 50px 10% 0px 10%;
+    padding: 10px 10% 0px 10%;
     width: 100%;
     box-sizing: border-box;
 }
@@ -156,8 +157,7 @@ body.scrolled .floating-navbar {
     justify-content: space-between;
     align-items: center;
     background-color: #e0eaf1;
-    padding: 50px 10%;
-    padding-bottom: 200px;
+    padding: 10px 13% 30px 10%;
     width: 100%;
     box-sizing: border-box;
 }
@@ -168,7 +168,7 @@ body.scrolled .floating-navbar {
 }
 
 .footer-right {
-    flex: 2;
+    flex: 1;
     position: relative;
 }
 
@@ -204,14 +204,13 @@ body.scrolled .floating-navbar {
     margin: 0;
     padding: 5px 10px;
     color: rgba(255, 255, 255, 0.7);
-    font-size: 14px;
     border-radius: 3px;
 
     font-family: "DM Serif Display", serif;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 0px;
     text-align: left;
 }
 
@@ -226,7 +225,7 @@ body.scrolled .floating-navbar {
     right: 10px;
     transform: translateY(-50%);
     background-color: transparent;
-    color: rgb(33, 51, 83);
+    color: #839DB5;
     border: none;
     cursor: pointer;
     font-size: 24px;
@@ -253,6 +252,7 @@ body.scrolled .floating-navbar {
     font-size: 1.3em;
     margin-bottom: 10px;
     text-align: left;
+    color: #839DB5;
 }
 
 .sub-subTitle {
