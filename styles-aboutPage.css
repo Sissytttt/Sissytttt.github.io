@@ -1,0 +1,44 @@
+.profilePage {
+    margin-top: 150px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.profile-photo {
+    width: 200px;
+    height: auto;
+}
+
+.name-logo {
+    width: 100px;
+    height: auto;
+    margin: 10px 0 0 0;
+    display: block;
+}
+
+.contact-info {
+    margin: 0 0 20px 0;
+}
+
+.contact-icon {
+    width: 15px;
+    transform: translateY(20%);
+    height: auto;
+    margin: 0 10px 0 10px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #a4b2bd;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #7495b4;
+}

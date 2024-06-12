@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
+    align-items: center;
 }
 
 .wrapcontainer-flexStart {
@@ -51,6 +52,7 @@ body {
     flex: 1 0 200px;
     margin: 20px;
     box-sizing: border-box;
+    /* background-color: cornflowerblue; */
 }
 
 .wrap2content-2 {
@@ -158,6 +160,16 @@ body.scrolled .floating-navbar {
     align-items: center;
     background-color: #e0eaf1;
     padding: 10px 13% 30px 10%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-alone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0eaf1;
+    padding: 50px 13% 30px 10%;
     width: 100%;
     box-sizing: border-box;
 }
