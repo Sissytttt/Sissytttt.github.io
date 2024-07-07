@@ -46,6 +46,10 @@
     background-image: url('assets/proj-desert/feature.png');
 }
 
+.portfolioImage {
+    width: 100%;
+}
+
 .description {
     margin-top: 50px;
     text-align: left;
