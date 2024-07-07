@@ -42,6 +42,9 @@
     background-image: url('assets/proj-ethereal/feature.png');
 }
 
+.featuredImage-desert {
+    background-image: url('assets/proj-desert/feature.png');
+}
 
 .description {
     margin-top: 50px;
