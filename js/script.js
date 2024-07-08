@@ -58,3 +58,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateGallery();
 });
+
+
+
+// Index page - Menu - Project hover animation
+document.querySelector('.container-proj1').addEventListener('mouseenter', function () {
+    if (!this.classList.contains('triggered')) {
+        this.classList.add('triggered');
+    }
+});
+document.querySelector('.container-proj2').addEventListener('mouseenter', function () {
+    if (!this.classList.contains('triggered')) {
+        this.classList.add('triggered');
+    }
+});
+document.querySelector('.container-proj3').addEventListener('mouseenter', function () {
+    if (!this.classList.contains('triggered')) {
+        this.classList.add('triggered');
+    }
+});
+document.querySelector('.container-proj4').addEventListener('mouseenter', function () {
+    if (!this.classList.contains('triggered')) {
+        this.classList.add('triggered');
+    }
+});
+document.querySelector('.container-proj5').addEventListener('mouseenter', function () {
+    if (!this.classList.contains('triggered')) {
+        this.classList.add('triggered');
+    }
+});
+document.querySelector('.container-proj6').addEventListener('mouseenter', function () {
+    if (!this.classList.contains('triggered')) {
+        this.classList.add('triggered');
+    }
+});

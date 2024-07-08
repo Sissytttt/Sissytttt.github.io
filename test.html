@@ -4,60 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Layout</title>
+    <title>Image Hover Effect</title>
     <style>
-        .container {
+        body {
             display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
         }
 
-        .left-column,
-        .right-column {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        .project-container {
+            justify-content: center;
+            align-items: center;
+            margin: 10%;
         }
 
-        .left-column {
-            flex: 1;
-            margin-right: 10px;
-            /* Space between columns */
-        }
-
-        .right-column {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .left-column img,
-        .right-column img {
-            width: 100%;
+        .container-proj1 {
+            position: relative;
+            width: 40vw;
+            min-width: 400px;
             height: auto;
-            display: block;
+            aspect-ratio: 2.8/1;
+            margin-bottom: 10%;
         }
 
-        .right-column .top-img {
-            margin-bottom: 10px;
-            /* Space between the two images */
+        .container-proj2 {
+            position: relative;
+            width: 40vw;
+            min-width: 400px;
+            height: auto;
+            aspect-ratio: 2.8/1;
+            margin-bottom: 10%;
+        }
+
+        .hover-image-proj1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease, clip-path 1s ease, filter 0.5s ease;
+            clip-path: inset(0 0 0 0);
+            filter: opacity(75%);
+        }
+
+        .hover-image-proj2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease, clip-path 1s ease, filter 1s ease;
+            clip-path: inset(0 0 0 0);
+            filter: opacity(75%);
+        }
+
+        .hover-text-proj1 {
+            position: absolute;
+            width: 20vw;
+            min-width: 200px;
+            color: black;
+            opacity: 0;
+            transition: opacity 2s ease;
+        }
+
+        .hover-text-proj2 {
+            position: absolute;
+            width: 20vw;
+            min-width: 200px;
+            color: black;
+            opacity: 0;
+            transition: opacity 2s ease;
+        }
+
+        .triggered .hover-image-proj1 {
+            transform: translateX(-25%);
+            clip-path: inset(0 10% 0 0);
+            filter: opacity(100%);
+        }
+
+        .triggered .hover-image-proj2 {
+            transform: translateX(25%);
+            clip-path: inset(0 5% 0 5%);
+            filter: opacity(100%);
+        }
+
+        .triggered .hover-text-proj1 {
+            opacity: 1;
+            transform: translateX(140%);
+        }
+
+        .triggered .hover-text-proj2 {
+            opacity: 1;
+            transform: translateX(-50%);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left-column">
-            <img src="path/to/left-image.jpg" alt="Left Image">
-        </div>
-        <div class="right-column">
-            <div class="top-img">
-                <img src="path/to/right-image1.jpg" alt="Right Image 1">
+    <div class="project-container">
+        <a href="proj-etherealAlchemy.html">
+            <div class="container-proj1">
+                <img src="assets/indexPage/coverImage/ethereal.png" alt="Sample Image" class="hover-image-proj1">
+                <div class="hover-text-proj1">
+                    <h3 class="menu-project-title">Ethereal Alchemy</h3>
+                    <p class="menu-project-tages">Immersive Space | 2023 | Individual Work</p>
+                    <p class="menu-project-description">An emotional healing experience helping the audience to achieve
+                        holistic well-being and find their emotional state of balance through the expressive body
+                        movement
+                        and interactive media experience.</p>
+                </div>
             </div>
-            <div class="bottom-img">
-                <img src="path/to/right-image2.jpg" alt="Right Image 2">
+        </a>
+
+        <a href="proj-descendantOfTheDesert.html">
+            <div class="container-proj2">
+                <img src="assets/indexPage/coverImage/desert.png" alt="Sample Image" class="hover-image-proj2">
+                <div class="hover-text-proj2">
+                    <h3 class="menu-project-title">Descendant Of The Desert</h3>
+                    <p class="menu-project-tages">Wearable Interactive Installation | 2022 | Group Work</p>
+                    <p class="menu-project-description">A speculative human biomorph that enables us to survive in the
+                        desert without taking refuge from the physical dependencies. </p>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
+
+    <script>
+        document.querySelector('.container-proj1').addEventListener('mouseenter', function () {
+            if (!this.classList.contains('triggered')) {
+                this.classList.add('triggered');
+            }
+        });
+        document.querySelector('.container-proj2').addEventListener('mouseenter', function () {
+            if (!this.classList.contains('triggered')) {
+                this.classList.add('triggered');
+            }
+        });
+    </script>
 </body>
 
 </html>

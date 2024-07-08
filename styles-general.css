@@ -61,6 +61,12 @@ body {
     box-sizing: border-box;
 }
 
+.wrap2content-3 {
+    flex: 3 0 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 .wrap3content-1 {
     flex: 1 1 calc(33.333% - 20px);
     margin: 10px;
