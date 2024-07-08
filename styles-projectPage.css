@@ -46,6 +46,18 @@
     background-image: url('assets/proj-desert/feature.png');
 }
 
+.featuredImage-belonging {
+    background-image: url('assets/proj-belonging/feature.png');
+}
+
+.featuredImage-letter {
+    background-image: url('assets/proj-letter/feature.png');
+}
+
+.featuredImage-disconnect {
+    background-image: url('assets/proj-disconnect/feature.png');
+}
+
 .portfolioImage {
     width: 100%;
 }
