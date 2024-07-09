@@ -4,101 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
     <style>
-        .wrapcontainer {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .wrap3content {
-            width: 30%;
-            margin: 1.5%;
+        .image-container {
+            position: relative;
+            width: 300px;
+            /* 设置适合你的宽度 */
             height: 200px;
+            /* 设置适合你的高度 */
         }
 
-        .hidden {
+        .image-container img,
+        .image-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .image-container video {
             display: none;
-        }
-
-        .buttons {
-            margin-bottom: 20px;
-        }
-
-        .buttons button {
-            margin-right: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="content-body">
-        <div class="all-content">
-            <div class="buttons">
-                <button onclick="filterSelection('all')">All</button>
-                <button onclick="filterSelection('UX design')">UX design</button>
-                <button onclick="filterSelection('product design')">Product design</button>
-                <button onclick="filterSelection('XR development')">XR development</button>
-                <button onclick="filterSelection('fabrication')">Fabrication</button>
-                <button onclick="filterSelection('installation')">Installation</button>
-                <button onclick="filterSelection('coding')">Coding</button>
-            </div>
-            <p class="subTitle" style="margin-top: -50px;">All Works</p>
-            <div class="wrapcontainer">
-                <!-- UX design & XR development project -->
-                <div class="wrap3content UX design XR development" style="background-color: dimgrey;">
-                    <div>
-                        <img src="path/to/your/image.jpg" alt="Image Description">
-                        <p>UX design & XR development</p>
-                    </div>
-                </div>
-                <!-- fabrication & UX design project -->
-                <div class="wrap3content fabrication UX design" style="background-color: rgb(222, 222, 222);">
-                    <div>
-                        <p>Fabrication & UX design</p>
-                    </div>
-                </div>
-                <!-- product design project -->
-                <div class="wrap3content product design" style="background-color: dimgrey;">
-                    <div>
-                        <p>Product design</p>
-                    </div>
-                </div>
-                <!-- product design -->
-                <div class="wrap3content product design" style="background-color: rgb(222, 222, 222);">
-                    <div>
-                        <p>Product design</p>
-                    </div>
-                </div>
-                <!-- XR development -->
-                <div class="wrap3content XR development" style="background-color: dimgrey;">
-                    <div>
-                        <p>XR development</p>
-                    </div>
-                </div>
-                <!-- fabrication & installation -->
-                <div class="wrap3content fabrication installation" style="background-color: rgb(222, 222, 222);">
-                    <div>
-                        <p>Fabrication & Installation</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="image-container">
+        <img src="test.png" alt="Static Image" class="static-img">
+        <video class="video-img" muted loop>
+            <source src="testV.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
     <script>
-        function filterSelection(category) {
-            var elements = document.getElementsByClassName('wrap3content');
-            if (category == 'all') category = '';
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].classList.remove('hidden');
-                if (!elements[i].className.includes(category) && category != '') {
-                    elements[i].classList.add('hidden');
-                }
-            }
-        }
-        // Initial display of all elements
-        filterSelection('all');
+        const container = document.querySelector('.image-container');
+        const staticImg = container.querySelector('.static-img');
+        const videoImg = container.querySelector('.video-img');
+
+        container.addEventListener('mouseenter', () => {
+            staticImg.style.display = 'none';
+            videoImg.style.display = 'block';
+            videoImg.play();
+        });
+
+        container.addEventListener('mouseleave', () => {
+            staticImg.style.display = 'block';
+            videoImg.style.display = 'none';
+            videoImg.pause();
+            videoImg.currentTime = 0;
+        });
     </script>
 </body>
 

@@ -166,37 +166,28 @@
     <!-- all projects starts -->
     <div class="content-body">
         <div class="all-content">
-            <p class="subTitle" style="margin-top: -50px;">All Works</p>
-            <!-- tages: UX design, product design, XR development, fabrication, installation, coding -->
-            <div class="wrapcontainer">
-                <!-- UX design & XR development project -->
-                <div class="wrap3content">
-                    <div style="background-color: dimgrey; width:100%; height: 200px"></div>
-                </div>
-                <!-- fabrication & UX design project -->
-                <div class="wrap3content">
-                    <div style="background-color: rgb(222, 222, 222); width:100%; height: 200px"></div>
-                </div>
-                <!-- product design project -->
-                <div class="wrap3content">
-                    <div style="background-color: dimgrey; width:100%; height: 200px"></div>
-                </div>
-                <!-- product design -->
-                <div class="wrap3content">
-                    <div style="background-color: rgb(222, 222, 222); width:100%; height: 200px"></div>
-                </div>
-                <!-- XR development -->
-                <div class="wrap3content">
-                    <div style="background-color: dimgrey; width:100%; height: 200px"></div>
-                </div>
-                <!-- fabrication & installation -->
-                <div class="wrap3content">
-                    <div style="background-color: rgb(222, 222, 222); width:100%; height: 200px"></div>
+            <div class="filter-menu">
+                <button class="filter-button" data-filter="default" style="display: none;">Default</button>
+                <button class="filter-button" data-filter="all">All Works</button>
+                <button class="filter-button" data-filter="ux">UX / Product</button>
+                <button class="filter-button" data-filter="xr">XR</button>
+                <button class="filter-button" data-filter="game">Game</button>
+                <button class="filter-button" data-filter="installation">Installation / Immersive Space</button>
+                <button class="filter-button" data-filter="computation">Computation</button>
+                <!-- <button class="filter-button" data-filter="publishings">Publishings</button> -->
+                <button class="filter-button" data-filter="dance">Dance</button>
+                <button class="filter-button" data-filter="fine-arts">Fine Arts</button>
+            </div>
+            <div class="content-body">
+                <div class="all-content">
+                    <div class="proj-block" id="proj-block">
+                        <!-- Project Cards Injected Here by JavaScript -->
+                        <!-- js/script-projectFilter.js -->
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
     </div>
     <!-- all projects ends -->
     <!-- ========================================================================================== -->
@@ -244,6 +235,8 @@
     <!-- footer ends -->
 
     <script src="js/script.js"></script>
+    <script src="js/allProjectsContent.js"></script>
+    <script src="js/script-projectFilter.js"></script>
 </body>
 
 </html>
