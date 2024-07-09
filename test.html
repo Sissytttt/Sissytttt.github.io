@@ -4,145 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Hover Effect</title>
+    <title>My Portfolio</title>
     <style>
-        body {
+        .wrapcontainer {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f0;
+            flex-wrap: wrap;
         }
 
-        .project-container {
-            justify-content: center;
-            align-items: center;
-            margin: 10%;
+        .wrap3content {
+            width: 30%;
+            margin: 1.5%;
+            height: 200px;
         }
 
-        .container-proj1 {
-            position: relative;
-            width: 40vw;
-            min-width: 400px;
-            height: auto;
-            aspect-ratio: 2.8/1;
-            margin-bottom: 10%;
+        .hidden {
+            display: none;
         }
 
-        .container-proj2 {
-            position: relative;
-            width: 40vw;
-            min-width: 400px;
-            height: auto;
-            aspect-ratio: 2.8/1;
-            margin-bottom: 10%;
+        .buttons {
+            margin-bottom: 20px;
         }
 
-        .hover-image-proj1 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: transform 1s ease, clip-path 1s ease, filter 0.5s ease;
-            clip-path: inset(0 0 0 0);
-            filter: opacity(75%);
-        }
-
-        .hover-image-proj2 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            transition: transform 1s ease, clip-path 1s ease, filter 1s ease;
-            clip-path: inset(0 0 0 0);
-            filter: opacity(75%);
-        }
-
-        .hover-text-proj1 {
-            position: absolute;
-            width: 20vw;
-            min-width: 200px;
-            color: black;
-            opacity: 0;
-            transition: opacity 2s ease;
-        }
-
-        .hover-text-proj2 {
-            position: absolute;
-            width: 20vw;
-            min-width: 200px;
-            color: black;
-            opacity: 0;
-            transition: opacity 2s ease;
-        }
-
-        .triggered .hover-image-proj1 {
-            transform: translateX(-25%);
-            clip-path: inset(0 10% 0 0);
-            filter: opacity(100%);
-        }
-
-        .triggered .hover-image-proj2 {
-            transform: translateX(25%);
-            clip-path: inset(0 5% 0 5%);
-            filter: opacity(100%);
-        }
-
-        .triggered .hover-text-proj1 {
-            opacity: 1;
-            transform: translateX(140%);
-        }
-
-        .triggered .hover-text-proj2 {
-            opacity: 1;
-            transform: translateX(-50%);
+        .buttons button {
+            margin-right: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="project-container">
-        <a href="proj-etherealAlchemy.html">
-            <div class="container-proj1">
-                <img src="assets/indexPage/coverImage/ethereal.png" alt="Sample Image" class="hover-image-proj1">
-                <div class="hover-text-proj1">
-                    <h3 class="menu-project-title">Ethereal Alchemy</h3>
-                    <p class="menu-project-tages">Immersive Space | 2023 | Individual Work</p>
-                    <p class="menu-project-description">An emotional healing experience helping the audience to achieve
-                        holistic well-being and find their emotional state of balance through the expressive body
-                        movement
-                        and interactive media experience.</p>
+    <div class="content-body">
+        <div class="all-content">
+            <div class="buttons">
+                <button onclick="filterSelection('all')">All</button>
+                <button onclick="filterSelection('UX design')">UX design</button>
+                <button onclick="filterSelection('product design')">Product design</button>
+                <button onclick="filterSelection('XR development')">XR development</button>
+                <button onclick="filterSelection('fabrication')">Fabrication</button>
+                <button onclick="filterSelection('installation')">Installation</button>
+                <button onclick="filterSelection('coding')">Coding</button>
+            </div>
+            <p class="subTitle" style="margin-top: -50px;">All Works</p>
+            <div class="wrapcontainer">
+                <!-- UX design & XR development project -->
+                <div class="wrap3content UX design XR development" style="background-color: dimgrey;">
+                    <div>
+                        <img src="path/to/your/image.jpg" alt="Image Description">
+                        <p>UX design & XR development</p>
+                    </div>
+                </div>
+                <!-- fabrication & UX design project -->
+                <div class="wrap3content fabrication UX design" style="background-color: rgb(222, 222, 222);">
+                    <div>
+                        <p>Fabrication & UX design</p>
+                    </div>
+                </div>
+                <!-- product design project -->
+                <div class="wrap3content product design" style="background-color: dimgrey;">
+                    <div>
+                        <p>Product design</p>
+                    </div>
+                </div>
+                <!-- product design -->
+                <div class="wrap3content product design" style="background-color: rgb(222, 222, 222);">
+                    <div>
+                        <p>Product design</p>
+                    </div>
+                </div>
+                <!-- XR development -->
+                <div class="wrap3content XR development" style="background-color: dimgrey;">
+                    <div>
+                        <p>XR development</p>
+                    </div>
+                </div>
+                <!-- fabrication & installation -->
+                <div class="wrap3content fabrication installation" style="background-color: rgb(222, 222, 222);">
+                    <div>
+                        <p>Fabrication & Installation</p>
+                    </div>
                 </div>
             </div>
-        </a>
-
-        <a href="proj-descendantOfTheDesert.html">
-            <div class="container-proj2">
-                <img src="assets/indexPage/coverImage/desert.png" alt="Sample Image" class="hover-image-proj2">
-                <div class="hover-text-proj2">
-                    <h3 class="menu-project-title">Descendant Of The Desert</h3>
-                    <p class="menu-project-tages">Wearable Interactive Installation | 2022 | Group Work</p>
-                    <p class="menu-project-description">A speculative human biomorph that enables us to survive in the
-                        desert without taking refuge from the physical dependencies. </p>
-                </div>
-            </div>
-        </a>
+        </div>
     </div>
 
     <script>
-        document.querySelector('.container-proj1').addEventListener('mouseenter', function () {
-            if (!this.classList.contains('triggered')) {
-                this.classList.add('triggered');
+        function filterSelection(category) {
+            var elements = document.getElementsByClassName('wrap3content');
+            if (category == 'all') category = '';
+            for (var i = 0; i < elements.length; i++) {
+                elements[i].classList.remove('hidden');
+                if (!elements[i].className.includes(category) && category != '') {
+                    elements[i].classList.add('hidden');
+                }
             }
-        });
-        document.querySelector('.container-proj2').addEventListener('mouseenter', function () {
-            if (!this.classList.contains('triggered')) {
-                this.classList.add('triggered');
-            }
-        });
+        }
+        // Initial display of all elements
+        filterSelection('all');
     </script>
 </body>
 

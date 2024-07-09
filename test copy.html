@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-general.css">
+    <title>作品展示</title>
+    <style>
+        .filter-menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-button {
+            margin: 5px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .filter-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* flex: 1 1 calc(33.3% - 40px);
+            margin: 20px; */
+
+        .proj-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            gap: 20px;
+        }
+
+        .container-proj {
+            flex: 0 1 calc(25% - 20px);
+            padding: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
+            color: black;
+        }
+
+        .proj-image {
+            width: 100%;
+            aspect-ratio: 2/1.2;
+            object-fit: cover;
+        }
+
+        .text-block {
+            margin: 10px;
+        }
+
+        .menu-project-title {
+            color: #1c1c1c;
+            margin: 0 0 8px 0;
+            transition: color 0.3s;
+        }
+
+        .container-proj:hover .menu-project-title {
+            color: #000000;
+        }
+
+        .menu-project-tages {
+            color: #565656;
+            margin: 0 0 5px 0;
+        }
+
+        .proj-description {
+            color: #888;
+            margin: 0 0 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(100% - 20px);
+            }
+        }
+
+        /* scroll effect */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(100px);
+            transition: opacity 0.6s, transform 0.6s;
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .youtube-video {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            margin-bottom: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="filter-menu">
+        <button class="filter-button" data-filter="default">Default</button>
+        <button class="filter-button" data-filter="all">All Works</button>
+        <button class="filter-button" data-filter="ux-design">UX Design</button>
+        <button class="filter-button" data-filter="xr-development">XR Development</button>
+        <button class="filter-button" data-filter="product-marketing-design">Product / Marketing Design</button>
+        <button class="filter-button" data-filter="game-dev">Game Dev</button>
+        <button class="filter-button" data-filter="installation">Installation</button>
+        <button class="filter-button" data-filter="coding">Coding</button>
+        <button class="filter-button" data-filter="publishings">Publishings</button>
+        <button class="filter-button" data-filter="dance">Dance</button>
+        <button class="filter-button" data-filter="fine-arts">Fine Arts</button>
+    </div>
+    <div class="content-body">
+        <div class="all-content">
+            <div class="proj-block" id="proj-block">
+                <!-- Project Cards Injected Here by JavaScript -->
+                <!-- js/script-projectFilter.js -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/script-projectFilter.js"></script>
+</body>
+
+</html>
