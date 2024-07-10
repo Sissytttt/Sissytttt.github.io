@@ -1,6 +1,6 @@
 function createProjectCard(project) {
     const card = document.createElement('div');
-    card.classList.add('container-proj');
+    card.classList.add('all-proj-container');
     card.classList.add('scroll-reveal');
 
     const isClickable = project.link !== "#";
@@ -9,7 +9,7 @@ function createProjectCard(project) {
     if (isClickable) {
         const link = document.createElement('a');
         link.href = project.link;
-        link.classList.add('container-proj');
+        link.classList.add('all-proj-container');
         card.appendChild(link);
 
         console.log("add", project.title);
@@ -37,26 +37,40 @@ function createProjectCard(project) {
             video.appendChild(source);
 
         }
-        const textDiv = document.createElement('div');
-        textDiv.classList.add('text-block');
-        card.appendChild(textDiv);
 
-        const title = document.createElement('h3');
-        title.classList.add('menu-project-title');
-        title.innerText = project.title;
-        textDiv.appendChild(title);
+    }
+    else { // not clickable
+        console.log("add", project.title);
 
-        const tags = document.createElement('p');
-        tags.classList.add('menu-project-tages');
-        tags.innerText = project.tags.join(" | ");
-        textDiv.appendChild(tags);
+        const imageContainer = document.createElement('div');
+        imageContainer.classList.add('image-container');
+        card.appendChild(imageContainer);
 
-        const description = document.createElement('p');
-        description.classList.add('proj-description');
-        description.innerText = project.description;
-        textDiv.appendChild(description);
+        const img = document.createElement('img');
+        img.src = project.image;
+        img.alt = project.title;
+        img.classList.add('static-img');
+        imageContainer.appendChild(img);
     }
 
+    const textDiv = document.createElement('div');
+    textDiv.classList.add('text-block');
+    card.appendChild(textDiv);
+
+    const title = document.createElement('h3');
+    title.classList.add('all-project-title');
+    title.innerText = project.title;
+    textDiv.appendChild(title);
+
+    const tags = document.createElement('p');
+    tags.classList.add('all-project-tages');
+    tags.innerText = project.tags.join(" | ");
+    textDiv.appendChild(tags);
+
+    const description = document.createElement('p');
+    description.classList.add('all-proj-description');
+    description.innerText = project.description;
+    textDiv.appendChild(description);
     return card;
 }
 
@@ -82,7 +96,7 @@ function filterProjects(filter) {
     document.dispatchEvent(new Event('scroll'));
 
     // hover effect 
-    const containers = document.querySelectorAll('.image-container');
+    const containers = document.querySelectorAll('.all-proj-container');
     containers.forEach(container => {
         const staticImg = container.querySelector('.static-img');
         const videoImg = container.querySelector('.video-img');

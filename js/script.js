@@ -1,3 +1,7 @@
+function goBack() {
+    window.history.back();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     // navbar scrolling animation
     const floatingNavbar = document.querySelector('.floating-navbar');

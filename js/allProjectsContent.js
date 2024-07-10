@@ -5,7 +5,7 @@ const projects = [
         description: "An emotional healing experience helping the audience to achieve holistic well-being and find their emotional state of balance through the expressive body movement and interactive media experience.",
         image: "assets/Projects-featuredImage/ethereal.png",
         video: "#",
-        link: "proj-etherealAlchemy.html",
+        link: "../featuredProjectPages/proj-etherealAlchemy.html",
         filter: ["computation", "installation", "featured"]
     },
     {
@@ -14,7 +14,7 @@ const projects = [
         description: "A thought-provoking installation exploring the themes of isolation and survival in a desert environment.",
         image: "assets/Projects-featuredImage/desert.png",
         video: "#",
-        link: "descendantOfTheDesert.html",
+        link: "../featuredProjectPages/proj-descendantOfTheDesert.html",
         filter: ["installation", "computation", "featured"]
     },
     {
@@ -23,16 +23,16 @@ const projects = [
         description: "A project focusing on creating a sense of belonging and community through XR and UX design.",
         image: "assets/Projects-featuredImage/belonging.png",
         video: "#",
-        link: "cityOfBelonging.html",
+        link: "../featuredProjectPages/proj-cityOfBelonging.html",
         filter: ["xr", "ux", "featured"]
     },
     {
         title: "The Lost Letter",
         tags: ["Game Dev", "featured"],
         description: "An engaging game development project that tells the story of a lost letter and the journey to find it.",
-        image: "assets/Projects-featuredImage/letter.png",
+        image: "../assets/Projects-featuredImage/letter.png",
         video: "#",
-        link: "theLostLetter.html",
+        link: "../featuredProjectPages/proj-theLostLetter.html",
         filter: ["game", "featured"]
     },
     {
@@ -41,17 +41,17 @@ const projects = [
         description: "An installation that explores the theme of disconnection in the modern world.",
         image: "assets/Projects-featuredImage/disconnect.png",
         video: "#",
-        link: "disconnect.html",
+        link: "../featuredProjectPages/proj-disconnect.html",
         filter: ["installation", "featured"]
     },
     {
         title: "True Dream Home",
-        tags: ["UX & XR"],
+        tags: ["UX | XR | Game"],
         description: "A project aiming to design the true dream home using UX and XR technologies.",
         image: "assets/otherWorks/trueDreamHome/coverImage.png",
         video: "assets/otherWorks/trueDreamHome/coverVideo.mp4",
-        link: "other-trueDreamHome.html",
-        filter: ["ux", "xr"]
+        link: "../otherProjectsPages/oProj-trueDreamHome.html",
+        filter: ["ux", "xr", "game"]
     },
     {
         title: "Wooden Mandala",
@@ -59,7 +59,7 @@ const projects = [
         description: "An installation created during an internship, focusing on the use of wood to create intricate mandala designs.",
         image: "assets/otherWorks/woodenMandala/coverImage.jpg",
         video: "assets/otherWorks/woodenMandala/coverVideo.mp4",
-        link: "other-woodenMandala.html",
+        link: "../otherProjectsPages/oProj-woodenMandala.html",
         filter: ["installation", "computation"]
     },
     {
@@ -68,7 +68,7 @@ const projects = [
         description: "A project that explores the future of greens using XR and coding technologies.",
         image: "assets/otherWorks/futureOfGreens/coverImage.png",
         video: "assets/otherWorks/futureOfGreens/coverVideo.mp4",
-        link: "other-futureOfGreens.html",
+        link: "../otherProjectsPages/oProj-futureOfGreens.html",
         filter: ["xr", "computation"]
     },
     {
@@ -89,15 +89,6 @@ const projects = [
     //     filter: ["publishings"]
     // },
     {
-        title: "Scattered and Reassembled | Han-Tang Dance",
-        tags: ["Dance"],
-        description: "A YouTube video showcasing the Han-Tang dance, scattered and reassembled.",
-        image: "assets/otherWorks/scatteredAndReassembled/coverImage.jpg",
-        video: "assets/otherWorks/scatteredAndReassembled/coverVideo.mp4",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        filter: ["dance"]
-    },
-    {
         title: "Foundation Keeper",
         tags: ["UX & Product / Marketing Design"],
         description: "A project on designing user experience and marketing strategies for a foundation.",
@@ -105,15 +96,6 @@ const projects = [
         video: "assets/otherWorks/foundationKeeper/coverVideo.mp4",
         link: "other-foundationKeeper.html",
         filter: ["ux"]
-    },
-    {
-        title: "Starry Night",
-        tags: ["Fine Art"],
-        description: "A fine art project that captures the beauty of a starry night.",
-        image: "assets/otherWorks/fineArts/feltedwoolartwork.jpg",
-        video: "#",
-        link: "#",
-        filter: ["fine-arts"]
     },
     {
         title: "Sound Of Nature",
@@ -132,24 +114,6 @@ const projects = [
         video: "#",
         link: "other-tmallCampus.html",
         filter: ["ux"]
-    },
-    {
-        title: "Fallin' Out",
-        tags: ["Dance"],
-        description: "A YouTube video showcasing the Fallin' Out dance performance.",
-        image: "assets/otherWorks/fallinOut/coverImage.jpg",
-        video: "assets/otherWorks/fallinOut/coverVideo.mp4",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        filter: ["dance"]
-    },
-    {
-        title: "Break My Heart Myself",
-        tags: ["Dance"],
-        description: "A YouTube video showcasing the Break My Heart Myself dance performance.",
-        image: "assets/otherWorks/breakMyHeartMyself/coverImage.jpg",
-        video: "assets/otherWorks/breakMyHeartMyself/coverImage.jpg",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-        filter: ["dance"]
     },
     {
         title: "Real Me",
@@ -179,6 +143,15 @@ const projects = [
         filter: ["game"]
     },
     {
+        title: "Whispering Sanctuary",
+        tags: ["Installation"],
+        description: "An immersive installation that creates a tranquil and meditative environment through the use of sound and light.",
+        image: "assets/otherWorks/whisperingSanctuary/coverImage.jpg",
+        video: "assets/otherWorks/whisperingSanctuary/coverVideo.mp4",
+        link: "whisperingSanctuary.html",
+        filter: ["installation"]
+    },
+    {
         title: "AR playGround",
         tags: ["XR"],
         description: "A project focusing on creating an AR playground.",
@@ -195,6 +168,42 @@ const projects = [
         video: "#",
         link: "other-beautifyAI.html",
         filter: ["ux"]
+    },
+    {
+        title: "Scattered and Reassembled | Han-Tang Dance",
+        tags: ["Dance"],
+        description: "A YouTube video showcasing the Han-Tang dance, scattered and reassembled.",
+        image: "assets/otherWorks/dance/hantangCoverImage.jpg",
+        video: "assets/otherWorks/dance/hantangCoverVideo.mp4",
+        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        filter: ["dance"]
+    },
+    {
+        title: "Fallin' Out",
+        tags: ["Dance"],
+        description: "A YouTube video showcasing the Fallin' Out dance performance.",
+        image: "assets/otherWorks/dance/fallCoverImage.jpg",
+        video: "assets/otherWorks/dance/fallCoverVideo.mp4",
+        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        filter: ["dance"]
+    },
+    {
+        title: "Break My Heart Myself",
+        tags: ["Dance"],
+        description: "A YouTube video showcasing the Break My Heart Myself dance performance.",
+        image: "assets/otherWorks/dance/breakCoverImage.png",
+        video: "assets/otherWorks/dance/breakCoverVideo.mp4",
+        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        filter: ["dance"]
+    },
+    {
+        title: "Starry Night",
+        tags: ["Fine Art"],
+        description: "A fine art project that captures the beauty of a starry night.",
+        image: "assets/otherWorks/fineArts/feltedwoolartwork.jpg",
+        video: "#",
+        link: "#",
+        filter: ["fine-arts"]
     },
     {
         title: "My Favorite Snack",

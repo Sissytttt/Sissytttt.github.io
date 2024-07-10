@@ -104,6 +104,14 @@ body {
     padding-bottom: 5px;
 }
 
+.back-button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
 .icon img {
     height: 40px;
     width: 45px;
@@ -188,20 +196,6 @@ body.scrolled .floating-navbar {
     box-sizing: border-box;
 }
 
-/* 
-.footer-alone {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-} */
-
 .footer-alone:after {
     content: "";
     display: block;
@@ -252,8 +246,7 @@ body.scrolled .floating-navbar {
     padding: 5px 10px;
     color: rgba(255, 255, 255, 0.7);
     border-radius: 3px;
-
-    font-family: "DM Serif Display", serif;
+    font-family: "Noto Serif", serif;
     font-weight: 100;
     font-style: normal;
     font-size: 1.5em;
@@ -284,8 +277,8 @@ body.scrolled .floating-navbar {
 
 
 .title {
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
+    font-family: "Noto Serif", serif;
+    font-weight: 600;
     font-style: normal;
     font-size: 2em;
     margin-bottom: 20px;
@@ -293,7 +286,7 @@ body.scrolled .floating-navbar {
 }
 
 .subTitle {
-    font-family: "DM Serif Display", serif;
+    font-family: "Noto Serif", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.3em;
@@ -303,7 +296,7 @@ body.scrolled .floating-navbar {
 }
 
 .sub-subTitle {
-    font-family: "DM Serif Display", serif;
+    font-family: "Noto Serif", serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1em;
