@@ -1,8 +1,8 @@
 const projects = [
     {
         title: "Ethereal Alchemy",
-        tags: ["Coding", "featured"],
-        description: "An emotional healing experience helping the audience to achieve holistic well-being and find their emotional state of balance through the expressive body movement and interactive media experience.",
+        tags: ["Computation", "Immersive Space", "Interactive Projection", "Therapeutic UX"],
+        description: "An emotional healing experience for holistic well-being through the Daoism and Dance and Movement Therapy.",
         image: "assets/Projects-featuredImage/ethereal.png",
         video: "#",
         link: "../featuredProjectPages/proj-etherealAlchemy.html",
@@ -10,8 +10,8 @@ const projects = [
     },
     {
         title: "Descendant Of The Desert",
-        tags: ["Installation", "featured"],
-        description: "A thought-provoking installation exploring the themes of isolation and survival in a desert environment.",
+        tags: ["Wearable Interactive Installation"],
+        description: "A speculative human biomorph that enables us to survive in the desert without taking refuge from the physical dependencies.",
         image: "assets/Projects-featuredImage/desert.png",
         video: "#",
         link: "../featuredProjectPages/proj-descendantOfTheDesert.html",
@@ -19,8 +19,8 @@ const projects = [
     },
     {
         title: "City Of Belonging",
-        tags: ["XR & UX", "featured"],
-        description: "A project focusing on creating a sense of belonging and community through XR and UX design.",
+        tags: ["XR", "UX"],
+        description: "An augmented reality-powered mobile application for cultural connection and building the sense of belonging.",
         image: "assets/Projects-featuredImage/belonging.png",
         video: "#",
         link: "../featuredProjectPages/proj-cityOfBelonging.html",
@@ -28,8 +28,8 @@ const projects = [
     },
     {
         title: "The Lost Letter",
-        tags: ["Game Dev", "featured"],
-        description: "An engaging game development project that tells the story of a lost letter and the journey to find it.",
+        tags: ["Game Design and Development"],
+        description: "A narrative-driven digital game that employs Chinese characters to tell the story of a student.",
         image: "../assets/Projects-featuredImage/letter.png",
         video: "#",
         link: "../featuredProjectPages/proj-theLostLetter.html",
@@ -37,17 +37,21 @@ const projects = [
     },
     {
         title: "Disconnect",
-        tags: ["Installation", "featured"],
-        description: "An installation that explores the theme of disconnection in the modern world.",
+        tags: ["Interactive Art Installation"],
+        description: "A large-scale installation crafted from 300+ cassettes, highlights the isolation brought forth by digital connectivity.",
         image: "assets/Projects-featuredImage/disconnect.png",
         video: "#",
         link: "../featuredProjectPages/proj-disconnect.html",
         filter: ["installation", "featured"]
     },
+
+    // ================================================================
+    // ================================================================
+
     {
         title: "True Dream Home",
-        tags: ["UX | XR | Game"],
-        description: "A project aiming to design the true dream home using UX and XR technologies.",
+        tags: ["UX", "XR", "Game"],
+        description: "A VR-elevated mobile home design gaming experience, immersing users in personalized interior design within their ideal location through virtual reality.",
         image: "assets/otherWorks/trueDreamHome/coverImage.png",
         video: "assets/otherWorks/trueDreamHome/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-trueDreamHome.html",
@@ -55,8 +59,8 @@ const projects = [
     },
     {
         title: "Wooden Mandala",
-        tags: ["Installation & Internship"],
-        description: "An installation created during an internship, focusing on the use of wood to create intricate mandala designs.",
+        tags: ["Installation", "Internship"],
+        description: "A large-scale interactive art installation applies computer vision responds to user movement with installation for visual and audio experience.",
         image: "assets/otherWorks/woodenMandala/coverImage.jpg",
         video: "assets/otherWorks/woodenMandala/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-woodenMandala.html",
@@ -64,8 +68,8 @@ const projects = [
     },
     {
         title: "Future Of Greens",
-        tags: ["XR & Coding"],
-        description: "A project that explores the future of greens using XR and coding technologies.",
+        tags: ["XR", "Coding"],
+        description: "A blend of virtual animation and a physical sculpture explores the collision of nature and industry, narrating a post-apocalyptic dystopian of artificial nature.",
         image: "assets/otherWorks/futureOfGreens/coverImage.png",
         video: "assets/otherWorks/futureOfGreens/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-futureOfGreens.html",
@@ -73,8 +77,8 @@ const projects = [
     },
     {
         title: "Sharing Accompany",
-        tags: ["UX & Product"],
-        description: "A project focused on designing user experience and product strategies for a sharing company.",
+        tags: ["UX", "Product"],
+        description: "A pet and human-friendly multifunctional chair promoting harmonious pet-human interaction and coexistence through creating integrated and shared space.",
         image: "assets/otherWorks/sharingCompany/coverImage.jpg",
         video: "assets/otherWorks/sharingCompany/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-sharingCompany.html",
@@ -90,8 +94,8 @@ const projects = [
     // },
     {
         title: "Foundation Keeper",
-        tags: ["UX & Product / Marketing Design"],
-        description: "A project on designing user experience and marketing strategies for a foundation.",
+        tags: ["UX", "Product", "Marketing Design"],
+        description: "An app-based makeup device utilizing UV detection for visually impaired individuals, accompanied by marketing promotion blueprints and social media campaigns.",
         image: "assets/otherWorks/foundationKeeper/coverImage.jpg",
         video: "assets/otherWorks/foundationKeeper/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-foundationKeeper.html",
@@ -99,17 +103,17 @@ const projects = [
     },
     {
         title: "Sound Of Nature",
-        tags: ["Coding"],
-        description: "A project that explores the sounds of nature through coding.",
+        tags: ["Creative Coding", "Web Development", "Interactive Sound Experience"],
+        description: "A generative audio website project that creates an interactive, nature-inspired audio journey. (Please use Safari and enable the sound)",
         image: "assets/otherWorks/soundOfNature/coverImage.png",
         video: "assets/otherWorks/soundOfNature/coverVideo.mp4",
-        link: "../otherProjectsPages/oProj-soundOfNature.html",
+        link: "http://shiyuantian.com/CreativeCodingLab-NYUSH-Sp22/FinalProjectFirstDraft/indexP0",
         filter: ["computation"]
     },
     {
         title: "Tmall Campus",
         tags: ["UX"],
-        description: "A project focusing on designing user experience for Tmall Campus.",
+        description: "User interface design of the Tmall Campus app main page during my internship, with 60% integrated into the app's final development.",
         image: "assets/otherWorks/TmallCampus/coverImage.png",
         video: "#",
         link: "../otherProjectsPages/oProj-tmallCampus.html",
@@ -117,8 +121,8 @@ const projects = [
     },
     {
         title: "Real Me",
-        tags: ["Product / Marketing Design"],
-        description: "A project on designing marketing strategies for the 'Real Me' campaign.",
+        tags: ["Product/Marketing Design"],
+        description: "Marketing design that boosts customer engagement and emotional connection, focused in jewelry products and pop-up store design.",
         image: "assets/otherWorks/realMe/coverImage.png",
         video: "#",
         link: "../otherProjectsPages/oProj-realMe.html",
@@ -126,8 +130,8 @@ const projects = [
     },
     {
         title: "KindRoot",
-        tags: ["Game"],
-        description: "A game development project called KindRoot.",
+        tags: ["Game Design and Development"],
+        description: "A 2-player competitive platformer game, developed with the theme of “ROOT” in 48 hours for 2023 Global Game Jam.",
         image: "assets/otherWorks/kindRoot/coverImage.png",
         video: "assets/otherWorks/kindRoot/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-kindRoot.html",
@@ -136,7 +140,7 @@ const projects = [
     {
         title: "Whispering Sanctuary",
         tags: ["Installation"],
-        description: "An immersive installation that creates a tranquil and meditative environment through the use of sound and light.",
+        description: "An urban installation that transforms voices into natural sounds, fostering citizen's emotional connection with nature.",
         image: "assets/otherWorks/whisperingSanctuary/coverImage.jpg",
         video: "assets/otherWorks/whisperingSanctuary/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-whisperingSanctuary.html",
@@ -145,7 +149,7 @@ const projects = [
     {
         title: "AR playGround",
         tags: ["XR"],
-        description: "A project focusing on creating an AR playground.",
+        description: "Interesting creations with AR filters for fun :D.",
         image: "assets/otherWorks/arPlayGround/coverImage.png",
         video: "assets/otherWorks/arPlayGround/coverImage.png",
         link: "../otherProjectsPages/oProj-arPlayGround.html",
@@ -153,83 +157,92 @@ const projects = [
     },
     {
         title: "BeautifyAI",
-        tags: ["UX & Product / Marketing Design"],
-        description: "A project on designing user experience and marketing strategies for BeautifyAI.",
+        tags: ["UX", "Product/Marketing Design"],
+        description: "An AI-powered makeup app with personalized suggestions, AR tutorials, and community features for L'oreal commercialization.",
         image: "assets/otherWorks/beautifyAI/coverImage.jpg",
         video: "#",
         link: "../otherProjectsPages/oProj-beautifyAI.html",
         filter: ["ux"]
     },
     {
-        title: "Scattered and Reassembled | Han-Tang Dance",
+        title: "Scattered and Reassembled",
         tags: ["Dance"],
-        description: "A YouTube video showcasing the Han-Tang dance, scattered and reassembled.",
+        description: "Han-Tang Group Dance Performance | 2024 NYUSH Dance Concert",
         image: "assets/otherWorks/dance/hantangCoverImage.jpg",
         video: "assets/otherWorks/dance/hantangCoverVideo.mp4",
-        link: "../otherProjectsPages/dancePages/hanTangDance.html",
+        link: "../otherProjectsPages/dance-hanTangDance.html",
         filter: ["dance"]
     },
     {
         title: "Fallin' Out",
         tags: ["Dance"],
-        description: "A YouTube video showcasing the Fallin' Out dance performance.",
+        description: "Jazz & Choreography | 2024 NYUSH 88 Countdown Event",
         image: "assets/otherWorks/dance/fallCoverImage.jpg",
         video: "assets/otherWorks/dance/fallCoverVideo.mp4",
-        link: "../otherProjectsPages/dancePages/fallinOut.html",
+        link: "../otherProjectsPages/dance-fallinOut.html",
         filter: ["dance"]
     },
     {
         title: "Break My Heart Myself",
         tags: ["Dance"],
-        description: "A YouTube video showcasing the Break My Heart Myself dance performance.",
+        description: "Partner Dance Cover",
         image: "assets/otherWorks/dance/breakCoverImage.png",
         video: "assets/otherWorks/dance/breakCoverVideo.mp4",
-        link: "../otherProjectsPages/dancePages/breakMyHeart.html",
+        link: "../otherProjectsPages/dance-breakMyHeart.html",
         filter: ["dance"]
     },
     {
         title: "Afternoon Tea",
         tags: ["Fine Art"],
-        description: "A fine art project capturing the essence of an afternoon tea.",
-        image: "assets/otherWorks/afternoonTea/coverImage.jpg",
+        description: "Oil Painting",
+        image: "assets/otherWorks/fineArts/oilPainting.jpg",
         video: "#",
-        link: "../otherProjectsPages/fineartPages/afternoonTea.html",
+        link: "../otherProjectsPages/fineart-afternoonTea.html",
         filter: ["fine-arts"]
     },
     {
         title: "Starry Night",
         tags: ["Fine Art"],
-        description: "A fine art project that captures the beauty of a starry night.",
+        description: "Felted Wool Artwork",
         image: "assets/otherWorks/fineArts/feltedwoolartwork.jpg",
         video: "#",
-        link: "../otherProjectsPages/fineartPages/starryNight.html",
+        link: "../otherProjectsPages/fineart-starryNight.html",
         filter: ["fine-arts"]
     },
     {
         title: "My Favorite Snack",
         tags: ["Fine Art"],
-        description: "A fine art project capturing the essence of a favorite snack.",
-        image: "assets/otherWorks/myFavoriteSnack/coverImage.jpg",
+        description: "Marker Artwork",
+        image: "assets/otherWorks/fineArts/markerArt.jpg",
         video: "#",
-        link: "../otherProjectsPages/fineartPages/snacks.html",
+        link: "../otherProjectsPages/fineart-snacks.html",
+        filter: ["fine-arts"]
+    },
+    {
+        title: "Tmall Campus Illustration",
+        tags: ["Fine Art"],
+        description: "Watercolor",
+        image: "assets/otherWorks/fineArts/waterColor.jpg",
+        video: "#",
+        link: "../otherProjectsPages/fineart-tmallCampus.html",
         filter: ["fine-arts"]
     },
     {
         title: "Water Shadows",
         tags: ["Fine Art"],
-        description: "A fine art project capturing the beauty of water shadows.",
-        image: "assets/otherWorks/waterShadows/coverImage.jpg",
+        description: "Oil Painting",
+        image: "assets/otherWorks/fineArts/oilPainting1.jpg",
         video: "#",
-        link: "../otherProjectsPages/fineartPages/waterShadows.html",
+        link: "../otherProjectsPages/fineart-waterShadows.html",
         filter: ["fine-arts"]
     },
     {
         title: "Installation Design",
         tags: ["Fine Art"],
-        description: "A fine art project focusing on installation design.",
-        image: "assets/otherWorks/installationDesign/coverImage.jpg",
+        description: "Digital Painting",
+        image: "assets/otherWorks/fineArts/digitalpainting.jpeg",
         video: "#",
-        link: "../otherProjectsPages/fineartPages/installationDesign.html",
+        link: "../otherProjectsPages/fineart-installationDesign.html",
         filter: ["fine-arts"]
     },
 ];
