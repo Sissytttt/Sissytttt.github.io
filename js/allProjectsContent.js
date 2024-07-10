@@ -77,7 +77,7 @@ const projects = [
         description: "A project focused on designing user experience and product strategies for a sharing company.",
         image: "assets/otherWorks/sharingCompany/coverImage.jpg",
         video: "assets/otherWorks/sharingCompany/coverVideo.mp4",
-        link: "other-sharingCompany.html",
+        link: "../otherProjectsPages/oProj-sharingCompany.html",
         filter: ["ux", "installation"]
     },
     // {
@@ -94,7 +94,7 @@ const projects = [
         description: "A project on designing user experience and marketing strategies for a foundation.",
         image: "assets/otherWorks/foundationKeeper/coverImage.jpg",
         video: "assets/otherWorks/foundationKeeper/coverVideo.mp4",
-        link: "other-foundationKeeper.html",
+        link: "../otherProjectsPages/oProj-foundationKeeper.html",
         filter: ["ux"]
     },
     {
@@ -103,7 +103,7 @@ const projects = [
         description: "A project that explores the sounds of nature through coding.",
         image: "assets/otherWorks/soundOfNature/coverImage.png",
         video: "assets/otherWorks/soundOfNature/coverVideo.mp4",
-        link: "other-soundOfNature.html",
+        link: "../otherProjectsPages/oProj-soundOfNature.html",
         filter: ["computation"]
     },
     {
@@ -112,7 +112,7 @@ const projects = [
         description: "A project focusing on designing user experience for Tmall Campus.",
         image: "assets/otherWorks/TmallCampus/coverImage.png",
         video: "#",
-        link: "other-tmallCampus.html",
+        link: "../otherProjectsPages/oProj-tmallCampus.html",
         filter: ["ux"]
     },
     {
@@ -121,17 +121,8 @@ const projects = [
         description: "A project on designing marketing strategies for the 'Real Me' campaign.",
         image: "assets/otherWorks/realMe/coverImage.png",
         video: "#",
-        link: "other-realMe.html",
+        link: "../otherProjectsPages/oProj-realMe.html",
         filter: ["ux"]
-    },
-    {
-        title: "Afternoon Tea",
-        tags: ["Fine Art"],
-        description: "A fine art project capturing the essence of an afternoon tea.",
-        image: "assets/otherWorks/afternoonTea/coverImage.jpg",
-        video: "#",
-        link: "#",
-        filter: ["fine-arts"]
     },
     {
         title: "KindRoot",
@@ -139,7 +130,7 @@ const projects = [
         description: "A game development project called KindRoot.",
         image: "assets/otherWorks/kindRoot/coverImage.png",
         video: "assets/otherWorks/kindRoot/coverVideo.mp4",
-        link: "other-kindRoot.html",
+        link: "../otherProjectsPages/oProj-kindRoot.html",
         filter: ["game"]
     },
     {
@@ -148,7 +139,7 @@ const projects = [
         description: "An immersive installation that creates a tranquil and meditative environment through the use of sound and light.",
         image: "assets/otherWorks/whisperingSanctuary/coverImage.jpg",
         video: "assets/otherWorks/whisperingSanctuary/coverVideo.mp4",
-        link: "whisperingSanctuary.html",
+        link: "../otherProjectsPages/oProj-whisperingSanctuary.html",
         filter: ["installation"]
     },
     {
@@ -157,7 +148,7 @@ const projects = [
         description: "A project focusing on creating an AR playground.",
         image: "assets/otherWorks/arPlayGround/coverImage.png",
         video: "assets/otherWorks/arPlayGround/coverImage.png",
-        link: "other-arPlayGround.html",
+        link: "../otherProjectsPages/oProj-arPlayGround.html",
         filter: ["xr"]
     },
     {
@@ -166,7 +157,7 @@ const projects = [
         description: "A project on designing user experience and marketing strategies for BeautifyAI.",
         image: "assets/otherWorks/beautifyAI/coverImage.jpg",
         video: "#",
-        link: "other-beautifyAI.html",
+        link: "../otherProjectsPages/oProj-beautifyAI.html",
         filter: ["ux"]
     },
     {
@@ -175,7 +166,7 @@ const projects = [
         description: "A YouTube video showcasing the Han-Tang dance, scattered and reassembled.",
         image: "assets/otherWorks/dance/hantangCoverImage.jpg",
         video: "assets/otherWorks/dance/hantangCoverVideo.mp4",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        link: "../otherProjectsPages/dancePages/hanTangDance.html",
         filter: ["dance"]
     },
     {
@@ -184,7 +175,7 @@ const projects = [
         description: "A YouTube video showcasing the Fallin' Out dance performance.",
         image: "assets/otherWorks/dance/fallCoverImage.jpg",
         video: "assets/otherWorks/dance/fallCoverVideo.mp4",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        link: "../otherProjectsPages/dancePages/fallinOut.html",
         filter: ["dance"]
     },
     {
@@ -193,8 +184,17 @@ const projects = [
         description: "A YouTube video showcasing the Break My Heart Myself dance performance.",
         image: "assets/otherWorks/dance/breakCoverImage.png",
         video: "assets/otherWorks/dance/breakCoverVideo.mp4",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        link: "../otherProjectsPages/dancePages/breakMyHeart.html",
         filter: ["dance"]
+    },
+    {
+        title: "Afternoon Tea",
+        tags: ["Fine Art"],
+        description: "A fine art project capturing the essence of an afternoon tea.",
+        image: "assets/otherWorks/afternoonTea/coverImage.jpg",
+        video: "#",
+        link: "../otherProjectsPages/fineartPages/afternoonTea.html",
+        filter: ["fine-arts"]
     },
     {
         title: "Starry Night",
@@ -202,7 +202,7 @@ const projects = [
         description: "A fine art project that captures the beauty of a starry night.",
         image: "assets/otherWorks/fineArts/feltedwoolartwork.jpg",
         video: "#",
-        link: "#",
+        link: "../otherProjectsPages/fineartPages/starryNight.html",
         filter: ["fine-arts"]
     },
     {
@@ -211,7 +211,7 @@ const projects = [
         description: "A fine art project capturing the essence of a favorite snack.",
         image: "assets/otherWorks/myFavoriteSnack/coverImage.jpg",
         video: "#",
-        link: "#",
+        link: "../otherProjectsPages/fineartPages/snacks.html",
         filter: ["fine-arts"]
     },
     {
@@ -220,7 +220,7 @@ const projects = [
         description: "A fine art project capturing the beauty of water shadows.",
         image: "assets/otherWorks/waterShadows/coverImage.jpg",
         video: "#",
-        link: "#",
+        link: "../otherProjectsPages/fineartPages/waterShadows.html",
         filter: ["fine-arts"]
     },
     {
@@ -229,7 +229,7 @@ const projects = [
         description: "A fine art project focusing on installation design.",
         image: "assets/otherWorks/installationDesign/coverImage.jpg",
         video: "#",
-        link: "#",
+        link: "../otherProjectsPages/fineartPages/installationDesign.html",
         filter: ["fine-arts"]
     },
 ];

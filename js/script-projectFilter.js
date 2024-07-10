@@ -74,6 +74,7 @@ function createProjectCard(project) {
     return card;
 }
 
+//=============================================================================
 function filterProjects(filter) {
     const projBlock = document.getElementById('proj-block');
     projBlock.innerHTML = '';
@@ -135,6 +136,87 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initial filter: default
     filterProjects('default');
 });
+
+
+//============================================================================================
+//================== Test: save the filter when window.history.back() ========================
+//============================================================================================
+// document.addEventListener('DOMContentLoaded', () => {
+//     const buttons = document.querySelectorAll('.filter-button');
+
+//     function filterProjects(filter) {
+//         const projBlock = document.getElementById('proj-block');
+//         projBlock.innerHTML = '';
+//         projects.forEach(project => {
+//             if (filter === 'all') {
+//                 const projectCard = createProjectCard(project);
+//                 projBlock.appendChild(projectCard);
+//             }
+//             else if (project.filter.includes(filter)) {
+//                 const projectCard = createProjectCard(project);
+//                 projBlock.appendChild(projectCard);
+//             }
+//             else if (filter === 'default' && !project.filter.includes('featured') && !project.filter.includes('dance') && !project.filter.includes('fine-arts')) {
+//                 const projectCard = createProjectCard(project);
+//                 projBlock.appendChild(projectCard);
+//             }
+//         });
+
+//         //scroll effect
+//         document.dispatchEvent(new Event('scroll'));
+
+//         // hover effect 
+//         const containers = document.querySelectorAll('.all-proj-container');
+//         containers.forEach(container => {
+//             const staticImg = container.querySelector('.static-img');
+//             const videoImg = container.querySelector('.video-img');
+
+//             if (videoImg !== null) {
+//                 container.addEventListener('mouseenter', () => {
+//                     staticImg.style.display = 'none';
+//                     videoImg.style.display = 'block';
+//                     // console.log(videoImg.style.display);
+//                     videoImg.play();
+//                 });
+
+//                 container.addEventListener('mouseleave', () => {
+//                     staticImg.style.display = 'block';
+//                     videoImg.style.display = 'none';
+//                     videoImg.pause();
+//                     videoImg.currentTime = 0;
+//                 });
+//             }
+//         });
+//     }
+
+//     // Load the last selected filter from localStorage
+//     const lastSelectedFilter = localStorage.getItem('selectedFilter') || 'default';
+
+//     // Apply the last selected filter
+//     filterProjects(lastSelectedFilter);
+
+//     // Set the active class on the correct button
+//     buttons.forEach(button => {
+//         if (button.getAttribute('data-filter') === lastSelectedFilter) {
+//             button.classList.add('active');
+//         }
+//     });
+
+//     buttons.forEach(button => {
+//         button.addEventListener('click', () => {
+//             buttons.forEach(btn => btn.classList.remove('active'));
+//             button.classList.add('active');
+
+//             const filter = button.getAttribute('data-filter');
+//             filterProjects(filter);
+
+//             // Save the selected filter to localStorage
+//             localStorage.setItem('selectedFilter', filter);
+//         });
+//     });
+// });
+//================================================================
+
 
 document.addEventListener('scroll', function () {
     const reveals = document.querySelectorAll('.scroll-reveal');
