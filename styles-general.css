@@ -16,7 +16,7 @@ body {
 }
 
 .touchScreenDisplay {
-    /* display: none; */
+    display: none;
 }
 
 .wrapcontainer {
@@ -348,11 +348,11 @@ img {
 }
 
 /* Touch Screen */
-/* @media (pointer: coarse) {
+@media (pointer: coarse) {
     .touchScreenDisplay {
         display: block;
     }
-} */
+}
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
