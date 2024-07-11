@@ -74,7 +74,9 @@ function createProjectCard(project) {
     return card;
 }
 
-//=============================================================================
+//============================================================================================
+//================== filter: default when every refresh ========================
+//============================================================================================
 // function filterProjects(filter) {
 //     const projBlock = document.getElementById('proj-block');
 //     projBlock.innerHTML = '';

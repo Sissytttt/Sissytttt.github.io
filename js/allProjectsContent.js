@@ -52,9 +52,9 @@ const projects = [
         title: "True Dream Home",
         tags: ["UX", "XR", "Game"],
         description: "A VR-elevated mobile home design gaming experience, immersing users in personalized interior design within their ideal location through virtual reality.",
-        image: "assets/otherWorks/trueDreamHome/coverImage.png",
-        video: "assets/otherWorks/trueDreamHome/coverVideo.mp4",
-        link: "../otherProjectsPages/oProj-trueDreamHome.html",
+        image: "assets/proj-home/feature.png",
+        video: "assets/proj-home/coverVideo.mp4",
+        link: "../featuredProjectPages/proj-trueDreamHome.html",
         filter: ["ux", "xr", "game"]
     },
     {
@@ -124,7 +124,7 @@ const projects = [
         tags: ["Product/Marketing Design"],
         description: "Marketing design that boosts customer engagement and emotional connection, focused in jewelry products and pop-up store design.",
         image: "assets/otherWorks/realMe/coverImage.png",
-        video: "#",
+        video: "assets/otherWorks/realMe/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-realMe.html",
         filter: ["ux"]
     },
@@ -132,8 +132,9 @@ const projects = [
         title: "KindRoot",
         tags: ["Game Design and Development"],
         description: "A 2-player competitive platformer game, developed with the theme of “ROOT” in 48 hours for 2023 Global Game Jam.",
-        image: "assets/otherWorks/kindRoot/coverImage.png",
-        video: "assets/otherWorks/kindRoot/coverVideo.mp4",
+        image: "assets/otherWorks/KindRoot/coverImage.png",
+        // video: "assets/otherWorks/kindRoot/coverVideo.mp4",
+        video: "assets/otherWorks/soundOfNature/coverVideo.mp4", // test github pages
         link: "../otherProjectsPages/oProj-kindRoot.html",
         filter: ["game"]
     },
@@ -146,21 +147,21 @@ const projects = [
         link: "../otherProjectsPages/oProj-whisperingSanctuary.html",
         filter: ["installation"]
     },
-    {
-        title: "AR playGround",
-        tags: ["XR"],
-        description: "Interesting creations with AR filters for fun :D.",
-        image: "assets/otherWorks/arPlayGround/coverImage.png",
-        video: "assets/otherWorks/arPlayGround/coverImage.png",
-        link: "../otherProjectsPages/oProj-arPlayGround.html",
-        filter: ["xr"]
-    },
+    // {
+    //     title: "AR playGround",
+    //     tags: ["XR"],
+    //     description: "Interesting creations with AR filters for fun :D.",
+    //     image: "assets/otherWorks/ARPlayGround/coverImage.png",
+    //     video: "assets/otherWorks/arPlayGround/coverVideo.mp4",
+    //     link: "../otherProjectsPages/oProj-arPlayGround.html",
+    //     filter: ["xr"]
+    // },
     {
         title: "BeautifyAI",
         tags: ["UX", "Product/Marketing Design"],
         description: "An AI-powered makeup app with personalized suggestions, AR tutorials, and community features for L'oreal commercialization.",
-        image: "assets/otherWorks/beautifyAI/coverImage.jpg",
-        video: "#",
+        image: "assets/otherWorks/beautifyAI/feature.png",
+        video: "assets/otherWorks/beautifyAI/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-beautifyAI.html",
         filter: ["ux"]
     },

@@ -58,6 +58,10 @@
     background-image: url('assets/proj-disconnect/feature.png');
 }
 
+.featuredImage-home {
+    background-image: url('assets/proj-home/feature.png');
+}
+
 .portfolioImage {
     width: 100%;
 }
