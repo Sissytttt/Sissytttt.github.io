@@ -24,10 +24,21 @@ html {
     box-sizing: border-box;
 }
 
+.aboutcontainer {
+    margin-left: 60px;
+}
 
 .profile-photo {
     width: 200px;
     height: auto;
+}
+
+.profile-photo1 {
+    display: none;
+}
+
+.profile-photo2 {
+    display: block;
 }
 
 .name-logo {
@@ -56,4 +67,20 @@ html {
 
 .contact-link:hover {
     color: #7495b4;
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+    .profile-photo1 {
+        display: block;
+    }
+
+    .profile-photo2 {
+        display: none;
+    }
+
+    .aboutcontainer {
+        margin-left: 0px;
+    }
 }

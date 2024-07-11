@@ -133,8 +133,7 @@ const projects = [
         tags: ["Game Design and Development"],
         description: "A 2-player competitive platformer game, developed with the theme of “ROOT” in 48 hours for 2023 Global Game Jam.",
         image: "assets/otherWorks/KindRoot/coverImage.png",
-        // video: "assets/otherWorks/kindRoot/coverVideo.mp4",
-        video: "assets/otherWorks/soundOfNature/coverVideo.mp4", // test github pages
+        video: "assets/otherWorks/kindRoot/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-kindRoot.html",
         filter: ["game"]
     },

@@ -15,6 +15,10 @@ body {
     justify-content: center;
 }
 
+.touchScreenDisplay {
+    /* display: none; */
+}
+
 .wrapcontainer {
     display: flex;
     flex-wrap: wrap;
@@ -343,6 +347,13 @@ img {
     }
 }
 
+/* Touch Screen */
+/* @media (pointer: coarse) {
+    .touchScreenDisplay {
+        display: block;
+    }
+} */
+
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
     .all-content {
@@ -362,11 +373,43 @@ img {
 /* Mobile */
 @media (max-width: 767px) {
     .all-content {
-        width: 90vw;
+        width: 80vw;
+    }
+
+    .icon img {
+        height: 30px;
+        width: auto;
+    }
+
+    .wrapcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .wrapcontainer-spaceBetween {
+        flex-direction: column;
+    }
+
+    .wrapcontainer-flexStart {
+        justify-content: center;
+    }
+
+    .wrapcontainer-flexEnd {
+        justify-content: center;
+    }
+
+    .wrap3content-1 {
+        flex: 1 1 calc(33.333% - 10px);
+        margin: 3px;
+        padding: 0px;
+        box-sizing: border-box;
+        text-align: center;
     }
 
     .wrap2content-1 {
         flex: 1 1 100%;
+        margin: 10px;
     }
 
     .wrap3content-2 {
@@ -395,6 +438,73 @@ img {
 
     .nav-links a {
         text-align: right;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .subTitle {
+        font-size: 1.2em;
+        margin-bottom: 0px;
+    }
+
+    .sub-subTitle {
+        font-size: 1em;
+    }
+
+    /* nav bar */
+    .floating-navbar {
+        height: 50px;
+    }
+
+    .navbar-container {
+        padding-top: 0px;
+    }
+
+    .nav-links {
+        gap: 0px;
+    }
+
+    /* footer */
+    .footer {
+        padding: 30px 0 0px 0;
+    }
+
+    .footer-alone {
+        padding: 30px 0 0px 0;
+    }
+
+    /* footer gallery */
+    .viewAnother {
+        font-size: 0.8em;
+    }
+
+
+    .gallery-item {
+        flex: 0 0 40%;
+        margin: 5px;
+    }
+
+    .gallery-project-title {
+        position: relative;
+        bottom: 0px;
+        padding: 0px;
+        margin-left: -10px;
+        color: rgba(27, 42, 64, 0.7);
+        font-size: 0.8em;
+        text-decoration: none;
+    }
+
+    .gallery-item:hover .gallery-project-title {
+        font-size: 0.9em;
+        color: rgba(27, 42, 64, 0.7);
+        transition: color 0.5s, font-size 0.5s;
+    }
+
+    .gallery-arrow {
+        position: relative;
+        left: 0;
     }
 
 }

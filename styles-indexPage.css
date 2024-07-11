@@ -66,6 +66,17 @@
 
 /* --------------------- Featured Projects ---------------------- */
 
+.featuredProjects-Title {
+    font-family: "Noto Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    margin-bottom: -60px;
+    text-align: left;
+    color: #839DB5;
+    margin-top: 50px;
+}
+
 .featured-projects {
     justify-content: center;
     align-items: center;
@@ -488,4 +499,174 @@
     height: auto;
     aspect-ratio: 16/9;
     margin-bottom: 10%;
+}
+
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .hello {
+        font-size: 40px;
+        margin-bottom: 0px;
+    }
+
+    .welcome {
+        font-size: 15px;
+    }
+
+    .illustration {
+        margin-top: 2%;
+    }
+
+    .gif {
+        width: 150px;
+    }
+
+    /* ---- Featured Projects ---- */
+
+    .featuredProjects-Title {
+        margin-bottom: -40px;
+        text-align: center;
+    }
+
+    .TS-feature-project-title {
+        font-size: 1em;
+        margin-top: -25px;
+        color: #b4c6d7;
+        text-align: center;
+    }
+
+    .featured-projects {
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+    }
+
+    .feature-proj-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-project-title {
+        color: #131b23;
+        margin: 0 0 8px 0;
+        transition: 0.3s;
+        position: relative;
+        font-weight: 450;
+    }
+
+    .feature-project-tages {
+        font-size: 0.9em;
+    }
+
+    .feature-proj-description {
+        font-size: 0.8em;
+    }
+
+    /* all projects part */
+
+    .all-project-title {
+        font-size: 1em;
+    }
+
+    .all-project-tages {
+        font-size: 0.8em;
+    }
+
+    .all-proj-description {
+        font-size: 0.8em;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .hello {
+        font-size: 20px;
+        margin-top: 100px;
+        margin-bottom: 0px;
+    }
+
+    .welcome {
+        font-size: 12px;
+    }
+
+    .hello-discription {
+        font-size: 10px;
+    }
+
+    .illustration {
+        margin-top: 2%;
+    }
+
+    .gif {
+        width: 150px;
+    }
+
+    /* ---- Featured Projects ---- */
+
+    .featuredProjects-Title {
+        margin-bottom: -30px;
+        text-align: center;
+    }
+
+    .TS-feature-project-title {
+        font-size: 1em;
+        margin-top: -12px;
+        color: #b4c6d7;
+        text-align: center;
+    }
+
+    .featured-projects {
+        justify-content: center;
+        align-items: center;
+        margin: 10%;
+    }
+
+    .feature-proj-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-project-title {
+        color: #131b23;
+        margin: 0 0 8px 0;
+        transition: 0.3s;
+        position: relative;
+        font-weight: 450;
+    }
+
+    .feature-project-tages {
+        font-size: 0.9em;
+    }
+
+    .feature-proj-description {
+        font-size: 0.8em;
+    }
+
+    /* all projects part */
+
+    .all-project-title {
+        font-size: 1em;
+    }
+
+    .all-project-tages {
+        font-size: 0.8em;
+        color: #a9b8c6;
+    }
+
+    .all-proj-description {
+        display: none;
+    }
+
+    .all-proj-container {
+        flex: 0 1 calc(50% - 20px);
+        padding: 0px;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
 }
