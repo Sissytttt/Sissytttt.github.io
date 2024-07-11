@@ -133,3 +133,11 @@
     background-color: #a2b9cf;
     /* 悬停时的颜色 */
 }
+
+
+
+@media (max-width: 767px) {
+    .oProj-headerContent {
+        flex-direction: column
+    }
+}
