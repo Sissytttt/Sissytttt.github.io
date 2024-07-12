@@ -424,6 +424,14 @@
     display: block;
 }
 
+.fimage-container-fineart {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
 .image-container img,
 .image-container video {
     position: absolute;

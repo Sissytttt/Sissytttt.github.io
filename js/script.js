@@ -1,6 +1,11 @@
 function goBack() {
-    window.history.back();
+    if (window.history.length > 1) {
+        window.history.back();
+    } else {
+        window.location.href = 'index.html'; // 将 'index.html' 替换为你的首页URL
+    }
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     // navbar scrolling animation

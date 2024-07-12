@@ -5,6 +5,7 @@ function createProjectCard(project) {
 
     const isClickable = project.link !== "#";
     const isPlayable = project.video !== "#";
+    const isFineart = project.filter.includes("fine-arts");
 
     if (isClickable) {
         const link = document.createElement('a');
@@ -15,7 +16,12 @@ function createProjectCard(project) {
         console.log("add", project.title);
 
         const imageContainer = document.createElement('div');
-        imageContainer.classList.add('image-container');
+        if (isFineart) {
+            imageContainer.classList.add('image-container-fineart');
+        }
+        else {
+            imageContainer.classList.add('image-container');
+        }
         link.appendChild(imageContainer);
 
         const img = document.createElement('img');

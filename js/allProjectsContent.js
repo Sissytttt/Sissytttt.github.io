@@ -192,21 +192,21 @@ const projects = [
         filter: ["dance"]
     },
     {
-        title: "Afternoon Tea",
-        tags: ["Fine Art"],
-        description: "Oil Painting",
-        image: "assets/otherWorks/fineArts/oilPainting.jpg",
-        video: "#",
-        link: "../otherProjectsPages/fineart-afternoonTea.html",
-        filter: ["fine-arts"]
-    },
-    {
         title: "Starry Night",
         tags: ["Fine Art"],
         description: "Felted Wool Artwork",
         image: "assets/otherWorks/fineArts/feltedwoolartwork.jpg",
         video: "#",
         link: "../otherProjectsPages/fineart-starryNight.html",
+        filter: ["fine-arts"]
+    },
+    {
+        title: "Afternoon Tea",
+        tags: ["Fine Art"],
+        description: "Oil Painting",
+        image: "assets/otherWorks/fineArts/oilPainting.jpg",
+        video: "#",
+        link: "../otherProjectsPages/fineart-afternoonTea.html",
         filter: ["fine-arts"]
     },
     {
