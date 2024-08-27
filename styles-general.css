@@ -1,5 +1,8 @@
 /* color scheme: 6E8396 / 839DB5 / e0eaf1*/
-
+/* font:  
+    title: "Noto Serif", serif;
+    body: "Inter", sans-serif;
+    */
 body {
     margin: 0;
     padding: 0;
@@ -288,6 +291,26 @@ body.scrolled .floating-navbar {
     text-align: left;
 }
 
+.caption{
+    font-family: "Noto Serif", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #000000;
+}
+
+.caption-keywords{
+    font-family: "Noto Serif", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #839DB5;
+}
+
 .subTitle {
     font-family: "Noto Serif", serif;
     font-weight: 400;
@@ -302,7 +325,7 @@ body.scrolled .floating-navbar {
     font-family: "Noto Serif", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.3em;
     margin-top: 20px;
     margin-bottom: 5px;
     text-align: left;

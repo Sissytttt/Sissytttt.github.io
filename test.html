@@ -1,61 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .image-container {
-            position: relative;
-            width: 300px;
-            /* 设置适合你的宽度 */
+        .scroll-container {
+            width: 100%; /* 设置容器宽度为100% */
+            overflow-x: auto; /* 启用水平滚动 */
             height: 200px;
-            /* 设置适合你的高度 */
+            white-space: nowrap; /* 禁用文本换行，使内容在同一行 */
         }
-
-        .image-container img,
-        .image-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .image-container video {
-            display: none;
+        .scroll-container img {
+            display: inline-block; /* 将图片设为inline-block，防止被压缩 */
         }
     </style>
+    <title>水平滑动的长图</title>
 </head>
-
 <body>
-    <div class="image-container">
-        <img src="test.png" alt="Static Image" class="static-img">
-        <video class="video-img" muted loop>
-            <source src="testV.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="scroll-container">
+        <img src="test.png" alt="长图" width="2000">
     </div>
-
-    <script>
-        const container = document.querySelector('.image-container');
-        const staticImg = container.querySelector('.static-img');
-        const videoImg = container.querySelector('.video-img');
-
-        container.addEventListener('mouseenter', () => {
-            staticImg.style.display = 'none';
-            videoImg.style.display = 'block';
-            videoImg.play();
-        });
-
-        container.addEventListener('mouseleave', () => {
-            staticImg.style.display = 'block';
-            videoImg.style.display = 'none';
-            videoImg.pause();
-            videoImg.currentTime = 0;
-        });
-    </script>
 </body>
-
 </html>

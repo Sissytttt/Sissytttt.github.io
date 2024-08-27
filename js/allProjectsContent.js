@@ -84,14 +84,15 @@ const projects = [
         link: "../otherProjectsPages/oProj-sharingCompany.html",
         filter: ["ux", "installation"]
     },
-    // {
-    //     title: "Teaching & Learning Creative Coding with Conversational AI",
-    //     tags: ["Publishings"],
-    //     description: "A publication that delves into teaching and learning creative coding using conversational AI.",
-    //     image: "assets/otherWorks/teachingLearningCreativeCoding/coverImage.jpg",
-    //     link: "other-teachingLearningCreativeCoding.html",
-    //     filter: ["publishings"]
-    // },
+    {
+        title: "Teaching & Learning Creative Coding with Conversational AI",
+        tags: ["Writing", "Pedagogy", "Coding"],
+        description: "Published: GLOKALde August 2024, ISSN 2148-7278 Volume: 10  Issue: 2, Article 3",
+        image: "assets/otherWorks/writing/glokalde/coverImage.jpg",
+        video: "#",
+        link: "https://www.glokalde.com/Articles/158/teaching-and-learning-creative-coding-with-conversational-ai",
+        filter: ["writing"]
+    },
     {
         title: "Foundation Keeper",
         tags: ["UX", "Product", "Marketing Design"],
