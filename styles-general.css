@@ -291,7 +291,7 @@ body.scrolled .floating-navbar {
     text-align: left;
 }
 
-.caption{
+.caption {
     font-family: "Noto Serif", serif;
     font-weight: 300;
     font-style: normal;
@@ -301,7 +301,7 @@ body.scrolled .floating-navbar {
     color: #000000;
 }
 
-.caption-keywords{
+.caption-keywords {
     font-family: "Noto Serif", serif;
     font-weight: 800;
     font-style: normal;
@@ -352,6 +352,19 @@ img {
 
 .gap {
     height: 100px;
+}
+
+/* ------------------- images -------------------*/
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.responsive-img {
+    width: auto;
+    display: inline-block;
 }
 
 /* ------------------- media queries -------------------*/
