@@ -26,28 +26,9 @@ const projects = [
         link: "../featuredProjectPages/proj-cityOfBelonging.html",
         filter: ["xr", "ux", "featured"]
     },
-    {
-        title: "The Lost Letter",
-        tags: ["Game Design and Development"],
-        description: "A narrative-driven digital game that employs Chinese characters to tell the story of a student.",
-        image: "../assets/Projects-featuredImage/letter.png",
-        video: "#",
-        link: "../featuredProjectPages/proj-theLostLetter.html",
-        filter: ["game", "featured"]
-    },
-    {
-        title: "Disconnect",
-        tags: ["Interactive Art Installation"],
-        description: "A large-scale installation crafted from 300+ cassettes, highlights the isolation brought forth by digital connectivity.",
-        image: "assets/Projects-featuredImage/disconnect.png",
-        video: "#",
-        link: "../featuredProjectPages/proj-disconnect.html",
-        filter: ["installation", "featured"]
-    },
 
     // ================================================================
     // ================================================================
-
     {
         title: "True Dream Home",
         tags: ["UX", "XR", "Game"],
@@ -65,6 +46,15 @@ const projects = [
         video: "assets/otherWorks/woodenMandala/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-woodenMandala.html",
         filter: ["installation", "computation"]
+    },
+    {
+        title: "The Lost Letter",
+        tags: ["Game Design and Development"],
+        description: "A narrative-driven digital game that employs Chinese characters to tell the story of a student.",
+        image: "../assets/Projects-featuredImage/letter.png",
+        video: "#",
+        link: "../featuredProjectPages/proj-theLostLetter.html",
+        filter: ["game"]
     },
     {
         title: "Future Of Greens",
@@ -134,7 +124,7 @@ const projects = [
         tags: ["Game Design and Development"],
         description: "A 2-player competitive platformer game, developed with the theme of “ROOT” in 48 hours for 2023 Global Game Jam.",
         image: "assets/otherWorks/KindRoot/coverImage.png",
-        video: "assets/otherWorks/kindRoot/coverVideo.mp4",
+        video: "assets/otherWorks/KindRoot/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-kindRoot.html",
         filter: ["game"]
     },
@@ -164,6 +154,15 @@ const projects = [
         video: "assets/otherWorks/beautifyAI/coverVideo.mp4",
         link: "../otherProjectsPages/oProj-beautifyAI.html",
         filter: ["ux"]
+    },
+    {
+        title: "Disconnect",
+        tags: ["Interactive Art Installation"],
+        description: "A large-scale installation crafted from 300+ cassettes, highlights the isolation brought forth by digital connectivity.",
+        image: "assets/Projects-featuredImage/disconnect.png",
+        video: "#",
+        link: "../featuredProjectPages/proj-disconnect.html",
+        filter: ["installation"]
     },
     {
         title: "Scattered and Reassembled",
