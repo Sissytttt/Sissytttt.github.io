@@ -62,6 +62,14 @@
     background-image: url('assets/proj-home/feature.png');
 }
 
+.featuredImage-amoeba {
+    background-image: url('assets/proj-amoeba/feature.png');
+}
+
+.featuredImage-mixi {
+    background-image: url('assets/proj-mixi/feature.png');
+}
+
 .portfolioImage {
     width: 100%;
 }
@@ -90,7 +98,7 @@
 }
 
 .subSection {
-    margin-top: 70px;
+    margin-top: 100px;
 }
 
 .pdf-container {

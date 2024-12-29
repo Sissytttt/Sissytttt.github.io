@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amoeba</title>
+    <link rel="stylesheet" href="../styles-general.css">
+    <link rel="stylesheet" href="../styles-projectPage.css">
+    <script src="../js/script.js"></script>
+    <link rel="icon" href="../assets/General/yuanFavicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ========================================================================================== -->
+
+    <!-- navBar starts -->
+    <header class="main-navbar">
+        <div class="navbar-container">
+            <div class="icon">
+                <div onclick="goBack()">
+                    <img src="../assets/General/shiyuanIcon.png" alt="Icon">
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a class="nav-tab" href="../about.html">About</a>
+                <a class="nav-tab" href="../assets/General/ShiyuanTian_resume_2024.pdf" target="_blank">CV</a>
+            </nav>
+        </div>
+    </header>
+
+    <header class="floating-navbar">
+        <div class="navbar-container">
+            <div class="icon">
+                <div onclick="goBack()">
+                    <img src="../assets/General/shiyuanIcon.png" alt="Icon">
+                </div>
+            </div>
+            <nav class="nav-links">
+                <a class="nav-tab" href="../about.html">About</a>
+                <a class="nav-tab" href="../assets/General/ShiyuanTian_resume_2024.pdf" target="_blank">CV</a>
+            </nav>
+        </div>
+    </header>
+    <!-- navBar ends-->
+
+    <!-- ========================================================================================== -->
+    <!-- ========================================================================================== -->
+
+    <!-- project-header starts -->
+    <div class="content-body">
+        <div class="all-content">
+            <div class="header">
+                <h1 class="title">Amoeba</h1>
+                <div class="headerContent">
+                    <div class="left-column">
+                        <p class="shortDescription">Amoeba is an AI-powered design tool integrated into Rhino
+                            Grasshopper, enabling designers to train custom AI models and
+                            generate dynamic 3D geometries for faster, more intuitive design iterations.</p>
+                        <p class="keywords">
+                            <strong>Key Words:</strong><br>
+                            3D Model Generation, AI Fine-tuning, Plugin Development<br>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="right-column">
+                        <p class="tags"><strong>Oct 2024 - Dec 2024</strong><br>
+                            <br>
+                            <strong>Technology:</strong><br>
+                            Rhino<br>
+                            Grasshopper<br>
+                            OpenAI<br>
+                            Python<br>
+                            <br>
+                            <strong>Group Project</strong><br>
+                            Bo Li, Rui Liu, Shiyuan Tian, Zijie Zhou<br>
+                            <strong>Role: </strong>
+                            Grasshopper Programmer
+                            (mainly on Transformation between geometry and data),
+                            Generating Data and Fine-tuning AI,
+                            Final Packaging
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- project-header ends -->
+
+    <!-- ========================================================================================== -->
+    <!-- ========================================================================================== -->
+
+    <!-- featured image starts -->
+    <div class="featuredImage featuredImage-amoeba"></div>
+    <!-- featured image ends -->
+
+    <!-- ========================================================================================== -->
+    <!-- ========================================================================================== -->
+
+    <!-- content starts -->
+    <div class="content-body">
+        <div class="all-content">
+
+            <!-- --------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------- -->
+
+            <!-- Gallery starts -->
+            <div class="description" style="margin-top:10%; margin-left: 5%; margin-right: 5%;margin-bottom: 5%;">
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                    <div style="flex: 1; max-width: 12%;">
+                        <img src="../assets/proj-amoeba/logo.png" alt="Logo"
+                            style="width: 100%; height: auto; object-fit: contain;">
+                    </div>
+                    <div style="flex: 7; max-width: 80%;">
+                        <div style="line-height: 1.3; color: black;">
+                            <a href="https://drive.google.com/drive/folders/1SHvtyl70ChJgJ67pdG0Gdnoc1TO_ae1j"
+                                style="color: black;">
+                                Use Amoeba
+                            </a><br>
+                            <a href="../assets/proj-amoeba/userManual.pdf" style="color: black;">
+                                User Manual (PDF)
+                            </a><br>
+                        </div>
+
+                        <p style="line-height: 1.3;">
+                            Amoeba is an <strong>AI-powered design tool</strong> integrated into <strong>Rhino
+                                Grasshopper</strong>
+                            that <strong>3D design workflow</strong> by:
+                            Enables <strong>custom AI model training</strong> tailored to design needs.<br>
+                            Facilitates dynamic <strong>3D geometry generation</strong> from intuitive inputs.<br>
+                            Accelerates design iterations for faster experimentation and refinement.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="subSection">
+                <h2 class="subTitle">Demo Output</h2>
+                <h2 class="sub-subTitle">Using “Chairs” As An Example<br>
+                    Users can train any models according to their design needs</h2>
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/AUm-qUTdSWo" frameborder="0" allowfullscreen></iframe>
+                </div>
+
+                <div class="wrapcontainer">
+                    <div class="wrap3content-1">
+                        <img class="keyImg" src="../assets/proj-amoeba/demoOutput/barOutput.gif" alt="GIF 1">
+                    </div>
+                    <div class="wrap3content-1">
+                        <img class="keyImg" src="../assets/proj-amoeba/demoOutput/beachOutput.gif" alt="GIF 2">
+                    </div>
+                    <div class="wrap3content-1">
+                        <img class="keyImg" src="../assets/proj-amoeba/demoOutput/tatamiOutput.gif" alt="GIF 3">
+                    </div>
+                    <div class="wrap3content-1">
+                        <img class="keyImg" src="../assets/proj-amoeba/demoOutput/barPrompt.png"
+                            style="object-fit: contain" alt="Image 4">
+                    </div>
+                    <div class="wrap3content-1">
+                        <img class="keyImg" src="../assets/proj-amoeba/demoOutput/beachPrompt.png"
+                            style="object-fit: contain" alt="Image 5">
+                    </div>
+                    <div class="wrap3content-1">
+                        <img class="keyImg" src="../assets/proj-amoeba/demoOutput/tatamiPrompt.png"
+                            style="object-fit: contain" alt="Image 6">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery ends -->
+
+            <!-- --------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------- -->
+
+
+            <!-- section starts -->
+            <div class="subSection">
+                <div class="wrapcontainer">
+                    <div style="flex: 6; max-width: 60%; margin-left: 0px;">
+                        <h2 class="subTitle">Problem Statement</h2>
+                        <p>Traditional 3D design iteration processes are often <strong>manual-intensive</strong>,
+                            <strong>technically complex</strong>technically complex, and
+                            <strong>time-consuming</strong>.
+                            Our goal is to create an <strong>AI-powered tool</strong> that enables <strong>custom AI
+                                model training</strong>custom AI model training and <strong>dynamic 3D geometry
+                                generation</strong>dynamic 3D geometry generation,
+                            empowering <strong>faster design iterations</strong> for rapid prototyping and creative
+                            experimentation.
+                        </p>
+                    </div>
+                    <div style="flex: 4; max-width: 40%; margin-left: 50px; margin-right: 0px;">
+                        <h2 class="subTitle">Target Users</h2>
+                        <img src="../assets/proj-amoeba/targetUsers.png"
+                            style="width: 250px; height: auto; object-fit: contain;" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <!-- section ends -->
+
+            <!-- --------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------- -->
+
+            <!-- section starts -->
+            <div class="subSection">
+                <h2 class="subTitle">Plugin Architecture</h2>
+                <img src="../assets/proj-amoeba/architecture.png" alt="Image">
+            </div>
+            <!-- section ends -->
+
+            <!-- --------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------- -->
+
+            <!-- section starts -->
+            <div class="subSection">
+                <h2 class="subTitle" style="margin-bottom: 0px;">Workflow and Components</h2>
+                <p style="margin-top: 3px; margin-bottom: 0px">Scroll to see all components in different forms</p>
+                <div class="scroll-container" style="max-height:700px;">
+                    <img src="../assets/proj-amoeba/workflow.png" alt="workflow" class="responsive-img"
+                        style="height: 400px;">
+                </div>
+            </div>
+            <!-- section ends -->
+
+
+            <!-- --------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------- -->
+
+            <!-- section starts -->
+            <div class="subSection">
+                <h2 class="subTitle">Final Output - Amoeba plugin</h2>
+                <div class="wrapcontainer" style="align-items: center;">
+                    <div class="wrap2content-1" style="flex: 1; max-width: 10%; text-align: center;margin-top: 0px;">
+                        <img src="../assets/proj-amoeba/icons.png" alt="icons" style="height:150px; width: auto;">
+                    </div>
+                    <div class="wrap2content-1" style="flex: 8; max-width: 85%; margin-top: 0px;">
+                        <p>The Amoeba plugin consists of three core components:
+                        <ol>
+                            <li>Training Data Generation: Enables the creation of structured, semantically annotated
+                                datasets tailored for custom model
+                                training.</li>
+                            <li>LLM Fine-Tuner: Provides tools for fine-tuning large language models (LLMs) to
+                                interpret
+                                user-defined prompts and
+                                generate precise 3D design outputs.</li>
+                            <li>AI-Driven Model Generation: Employs a two-step AI pipeline to seamlessly transform
+                                text inputs into 3D geometries.</li>
+                        </ol>
+                        Amoeba enhances creativity and adaptability, offering designers tailored, intelligent design
+                        solutions with efficiency
+                        and precision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- section ends -->
+
+            <!-- --------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------- -->
+
+            <!-- section starts -->
+            <div class="subSection" id="section-id">
+                <h2 class="subTitle">Slide Deck with Detailed Code and Process Explanations</h2>
+                <iframe class="pdf-container" src="../assets/proj-amoeba/Amoeba_CoD.pdf"></iframe>
+            </div>
+            <!-- section ends -->
+
+            <!-- --------------------------------------------------------------------------------- -->
+            <!-- --------------------------------------------------------------------------------- -->
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- ========================================================================================== -->
+    <!-- ========================================================================================== -->
+
+
+    <footer class="footer-gallery">
+        <div class="footer-left">
+            <p class="subTitle" style="font-weight: 600;">View Another Project</p>
+        </div>
+        <div class="footer-right">
+            <div class="gallery">
+                <div class="all-content">
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <a href="../featuredProjectPages/proj-etherealAlchemy.html">
+                                <img src="../assets/Projects-featuredImage/ethereal.png" alt="Project 1">
+                                <p class="gallery-project-title">Ethereal Alchemy</p>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="../featuredProjectPages/proj-descendantOfTheDesert.html">
+                                <img src="../assets/Projects-featuredImage/desert.png" alt="Project 2">
+                                <p class="gallery-project-title">Descendant Of The Desert</p>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="../featuredProjectPages/proj-cityOfBelonging.html">
+                                <img src="../assets/Projects-featuredImage/belonging.png" alt="Project 3">
+                                <p class="gallery-project-title">City Of Belonging</p>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="../featuredProjectPages/proj-theLostLetter.html">
+                                <img src="../assets/Projects-featuredImage/letter.png" alt="Project 4">
+                                <p class="gallery-project-title" style="color: rgba(0, 0, 0, 0.6);"
+                                    onmouseover="this.style.color='rgba(0, 0, 0, 0.9)'"
+                                    onmouseout="this.style.color='rgba(0, 0, 0, 0.6)'">The Lost Letter</p>
+                            </a>
+                        </div>
+                        <div class="gallery-item">
+                            <a href="../proj-disconnect.html">
+                                <img src="../assets/Projects-featuredImage/disconnect.png" alt="Project 5">
+                                <p class="gallery-project-title">Disconnect</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="gallery-arrow right" onclick="nextSlide()">&#10095;</button>
+            <!-- <button class="gallery-arrow left" onclick="prevSlide()">&#10094;</button> -->
+        </div>
+    </footer>
+    <footer class="footer">
+        <div class="wrapcontainer-spaceBetween">
+            <div class="wrapcontainer-flexStart" style="align-items: flex-end;">
+                <div class="flexSize icon-container">
+                    <div class="icon">
+                        <img src="../assets/General/shiyuanIcon.png" alt="Icon"
+                            style="padding-right: 10px; transform: translateY(-25%);">
+                    </div>
+                </div>
+                <div class="flexSize text-container" style="text-align: left;">
+                    <p>Copyright © 2024 Shiyuan Tian. <br> All rights reserved.</p>
+                </div>
+            </div>
+            <div class="wrapcontainer-flexEnd" style="align-items: flex-end;">
+                <a href="mailto:shiyuantian@nyu.edu"
+                    style="display: flex; align-items: flex-end; text-decoration: none; color: inherit;">
+                    <div class="flexSize icon-container">
+                        <div class="icon">
+                            <img src="../assets/icons/mail.png" alt="Icon"
+                                style="width:25px; height: auto; padding-right: 10px; transform: translateY(-10%);">
+                        </div>
+                    </div>
+                    <div class="flexSize text-container" style="text-align: left;">
+                        <p>shiyuantian@nyu.edu</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
