@@ -4,24 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Containers</title>
     <style>
-        .scroll-container {
-            width: 100%;
-            overflow-x: auto;
-            height: 200px;
-            white-space: nowrap;
+        /* 最外层容器 */
+        .wrapcontainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
 
-        .scroll-container img {
-            display: inline-block;
+        /* 每个 wrapcontent */
+        .wrapcontent {
+            flex: 1;
+            display: flex;
         }
     </style>
-    <title>水平滑动的长图</title>
 </head>
 
 <body>
-    <div class="scroll-container">
-        <img src="test.png" alt="长图" width="2000">
+    <div class="subSection">
+        <h2 class="subTitle">四列布局保留嵌套</h2>
+        <div class="wrapcontainer">
+            <!-- 左列 -->
+            <div class="wrapcontent">
+                <div class="wrapcontainer">
+                    <div class="wrapcontent">
+                        <p>In a world where friendships span continents, The Challenge of Long-Distance
+                            Connection lies in
+                            capturing the warmth of
+                            shared moments—like clinking glasses or sharing a toast together.</p>
+                    </div>
+                    <div class="wrapcontent">
+                        <img style="max-width: 100%;height: auto;" src="../image.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+            <!-- 右列 -->
+            <div class="wrapcontent">
+                <div class="wrapcontainer">
+                    <div class="wrapcontent">
+                        <img style="max-width: 100%;height: auto;" src="../image.png" alt="Image">
+                    </div>
+                    <div class="wrapcontent">
+                        <img style="max-width: 100%;height: auto;" src="../image.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 

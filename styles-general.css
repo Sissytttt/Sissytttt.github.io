@@ -55,9 +55,15 @@ body {
     align-items: center;
 }
 
+.wrapcontent {
+    flex: 1;
+    display: flex;
+}
+
+
 .wrap2content-1 {
     flex: 1 0 200px;
-    margin: 20px;
+    padding: 20px;
     box-sizing: border-box;
     /* background-color: cornflowerblue; */
 }
