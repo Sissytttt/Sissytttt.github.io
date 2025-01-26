@@ -23,7 +23,7 @@ const projects = [
         description: "An augmented reality-powered mobile application for cultural connection and building the sense of belonging.",
         image: "assets/Projects-featuredImage/belonging.png",
         video: "#",
-        link: "../featuredProjectPages/proj-cityOfBelonging.html",
+        link: "https://st22533.wixsite.com/portfolio/general-clean",
         filter: ["xr", "ux", "featured"]
     },
 

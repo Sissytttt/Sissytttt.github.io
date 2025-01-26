@@ -4,54 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nested Containers</title>
-    <style>
-        /* 最外层容器 */
-        .wrapcontainer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        /* 每个 wrapcontent */
-        .wrapcontent {
-            flex: 1;
-            display: flex;
-        }
-    </style>
+    <title>Amoeba</title>
+    <link rel="stylesheet" href="../styles-general.css">
+    <link rel="stylesheet" href="../styles-projectPage.css">
+    <script src="../js/script.js"></script>
+    <link rel="icon" href="../assets/General/yuanFavicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div class="subSection">
-        <h2 class="subTitle">四列布局保留嵌套</h2>
-        <div class="wrapcontainer">
-            <!-- 左列 -->
-            <div class="wrapcontent">
-                <div class="wrapcontainer">
-                    <div class="wrapcontent">
-                        <p>In a world where friendships span continents, The Challenge of Long-Distance
-                            Connection lies in
-                            capturing the warmth of
-                            shared moments—like clinking glasses or sharing a toast together.</p>
-                    </div>
-                    <div class="wrapcontent">
-                        <img style="max-width: 100%;height: auto;" src="../image.png" alt="Image">
-                    </div>
+    <!-- ========================================================================================== -->
+
+    <!-- navBar starts -->
+    <!-- mainpage navbar -->
+    <header class="main-navbar">
+        <div class="navbar-container">
+            <!-- Left Icon -->
+            <div class="icon">
+                <div onclick="goBack()">
+                    <img src="../assets/General/shiyuanIcon.png" alt="Icon">
                 </div>
             </div>
-            <!-- 右列 -->
-            <div class="wrapcontent">
-                <div class="wrapcontainer">
-                    <div class="wrapcontent">
-                        <img style="max-width: 100%;height: auto;" src="../image.png" alt="Image">
-                    </div>
-                    <div class="wrapcontent">
-                        <img style="max-width: 100%;height: auto;" src="../image.png" alt="Image">
-                    </div>
-                </div>
-            </div>
+            <!-- Right Links -->
+            <nav class="nav-links">
+                <a class="nav-tab" href="../about.html">About</a>
+                <a class="nav-tab" href="../assets/General/ShiyuanTian_resume_2024.pdf" target="_blank">CV</a>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <!-- floating navbar -->
+    <header class="floating-navbar">
+        <div class="navbar-container">
+            <!-- Left Icon -->
+            <div class="left-section">
+                <div class="icon">
+                    <div onclick="goBack()">
+                        <img src="../assets/General/shiyuanIcon.png" alt="Icon">
+                    </div>
+                </div>
+                <p class="navbar-text">A Designer works on...</p>
+            </div>
+
+
+            <!-- Centered Navigation Links -->
+            <nav class="nav-center">
+                <a class="nav-category" href="../category1.html">Category 1</a>
+                <a class="nav-category" href="../category2.html">Category 2</a>
+                <a class="nav-category" href="../category3.html">Category 3</a>
+                <a class="nav-category" href="../category4.html">Category 4</a>
+            </nav>
+
+            <!-- Right Links -->
+            <nav class="nav-links">
+                <a class="nav-tab" href="../about.html">About</a>
+                <a class="nav-tab" href="../assets/General/ShiyuanTian_resume_2024.pdf" target="_blank">CV</a>
+            </nav>
+        </div>
+    </header>
+    <!-- navBar ends-->
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 
 </html>
