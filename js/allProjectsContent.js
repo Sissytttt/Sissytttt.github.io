@@ -9,15 +9,6 @@ const projects = [
         filter: ["computation", "installation", "featured"]
     },
     {
-        title: "Descendant Of The Desert",
-        tags: ["Wearable Interactive Installation"],
-        description: "A speculative human biomorph that enables us to survive in the desert without taking refuge from the physical dependencies.",
-        image: "assets/Projects-featuredImage/desert.png",
-        video: "#",
-        link: "../featuredProjectPages/proj-descendantOfTheDesert.html",
-        filter: ["installation", "computation", "featured"]
-    },
-    {
         title: "City Of Belonging",
         tags: ["XR", "UX"],
         description: "An augmented reality-powered mobile application for cultural connection and building the sense of belonging.",
@@ -29,6 +20,33 @@ const projects = [
 
     // ================================================================
     // ================================================================
+    {
+        title: "Descendant Of The Desert",
+        tags: ["Wearable Interactive Installation"],
+        description: "A speculative human biomorph that enables us to survive in the desert without taking refuge from the physical dependencies.",
+        image: "assets/Projects-featuredImage/desert.png",
+        video: "#",
+        link: "../featuredProjectPages/proj-descendantOfTheDesert.html",
+        filter: ["installation", "computation"]
+    },
+    {
+        title: "Amoeba",
+        tags: ["AI modeling worklow"],
+        description: "an AI-powered design workflow for generating 3D models with text.",
+        image: "assets/proj-amoeba/feature.png",
+        video: "#",
+        link: "../featuredProjectPages/proj-amoeba.html",
+        filter: ["AI", "computation"]
+    },
+    {
+        title: "MIXI",
+        tags: ["Product Design"],
+        description: "An AI - powered beverage machine that transforms long - distance social connection into emotional drinks.",
+        image: "assets/proj-mixi/feature.png",
+        video: "#",
+        link: "../featuredProjectPages/proj-mixi.html",
+        filter: ["product", "ux", "computation"]
+    },
     {
         title: "True Dream Home",
         tags: ["UX", "XR", "Game"],
