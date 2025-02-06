@@ -170,7 +170,7 @@ const projects = [
         description: "An AI-powered makeup app with personalized suggestions, AR tutorials, and community features for L'oreal commercialization.",
         image: "assets/otherWorks/beautifyAI/feature.png",
         video: "assets/otherWorks/beautifyAI/coverVideo.mp4",
-        link: "../otherProjectsPages/oProj-beautifyAI.html",
+        link: "https://st22533.wixsite.com/portfolio/beautifyai",
         filter: ["ux"]
     },
     {
