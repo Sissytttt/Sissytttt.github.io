@@ -125,7 +125,7 @@ const projects = [
         description: "User interface design of the Tmall Campus app main page during my internship, with 60% integrated into the app's final development.",
         image: "assets/otherWorks/TmallCampus/coverImage.png",
         video: "#",
-        link: "../otherProjectsPages/oProj-tmallCampus.html",
+        link: "https://st22533.wixsite.com/portfolio/tmall-campus",
         filter: ["ux"]
     },
     {
